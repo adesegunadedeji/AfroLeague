@@ -1011,3 +1011,701 @@ Processing by UsersController#index as */*
 Completed 200 OK in 17ms (Views: 12.6ms | ActiveRecord: 1.7ms | Allocations: 978)
 
 
+Started GET "/users" for ::1 at 2019-10-12 15:18:31 -0400
+  [1m[35m (11.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as */*
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 52ms (Views: 13.6ms | ActiveRecord: 35.9ms | Allocations: 5728)
+
+
+Started POST "/users" for ::1 at 2019-10-12 15:18:42 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"joe", "email"=>"joe@test.com", "password"=>"[FILTERED]", "user"=>{"username"=>"joe", "email"=>"joe@test.com"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 178)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/users_controller.rb:18:in `create'
+Started GET "/leagues" for ::1 at 2019-10-12 15:18:42 -0400
+Processing by LeaguesController#index as */*
+  [1m[36mLeague Load (2.2ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 77ms (Views: 51.4ms | ActiveRecord: 23.0ms | Allocations: 19916)
+
+
+Started GET "/users" for ::1 at 2019-10-12 15:21:44 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (28.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 118ms (Views: 13.2ms | ActiveRecord: 99.3ms | Allocations: 5268)
+
+
+Started POST "/users" for ::1 at 2019-10-12 15:21:59 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"adesegun ", "email"=>"test@test.com", "password"=>"[FILTERED]", "user"=>{"username"=>"adesegun ", "email"=>"test@test.com"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 160)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/users_controller.rb:18:in `create'
+Started GET "/leagues" for ::1 at 2019-10-12 15:21:59 -0400
+Processing by LeaguesController#index as */*
+  [1m[36mLeague Load (2.8ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 65ms (Views: 56.7ms | ActiveRecord: 6.4ms | Allocations: 19767)
+
+
+Started GET "/users" for ::1 at 2019-10-12 15:22:20 -0400
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as */*
+  [1m[36mUser Load (15.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 63ms (Views: 10.5ms | ActiveRecord: 45.3ms | Allocations: 5730)
+
+
+Started POST "/users" for ::1 at 2019-10-12 15:22:33 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"test", "email"=>"pass@test.com", "password"=>"[FILTERED]", "user"=>{"username"=>"test", "email"=>"pass@test.com"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 178)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/users_controller.rb:18:in `create'
+Started GET "/leagues" for ::1 at 2019-10-12 15:22:33 -0400
+Processing by LeaguesController#index as */*
+  [1m[36mLeague Load (1.0ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 98ms (Views: 70.5ms | ActiveRecord: 4.2ms | Allocations: 19948)
+
+
+Started GET "/users" for ::1 at 2019-10-12 15:24:56 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 116ms (Views: 15.5ms | ActiveRecord: 41.6ms | Allocations: 5270)
+
+
+Started POST "/users" for ::1 at 2019-10-12 15:25:05 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"ade", "email"=>"test@test.com", "password"=>"[FILTERED]", "user"=>{"username"=>"ade", "email"=>"test@test.com"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (1.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "ade"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+Completed 422 Unprocessable Entity in 170ms (Views: 0.2ms | ActiveRecord: 3.5ms | Allocations: 179588)
+
+
+Started GET "/leagues" for ::1 at 2019-10-12 15:25:05 -0400
+Processing by LeaguesController#index as */*
+  [1m[36mLeague Load (5.1ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 65ms (Views: 44.4ms | ActiveRecord: 17.0ms | Allocations: 19792)
+
+
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "joeK@ga.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Joe"], ["LIMIT", 1]]
+  [1m[36mUser Create (14.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "Joe"], ["email", "joeK@ga.com"], ["password_digest", "$2a$12$NeQzVqzG.IO.thOfke53xOHYrysaFW7kAZ8fytiHGO0x51J6G8edC"], ["created_at", "2019-10-12 19:29:21.369722"], ["updated_at", "2019-10-12 19:29:21.369722"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/users" for ::1 at 2019-10-12 15:30:42 -0400
+  [1m[35m (37.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as */*
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 27ms (Views: 12.2ms | ActiveRecord: 10.2ms | Allocations: 5863)
+
+
+Started POST "/users" for ::1 at 2019-10-12 15:30:53 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"tammy", "email"=>"ta@test.com", "password"=>"[FILTERED]", "user"=>{"username"=>"tammy", "email"=>"ta@test.com"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ta@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "tammy"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+Completed 422 Unprocessable Entity in 194ms (Views: 0.2ms | ActiveRecord: 1.1ms | Allocations: 179603)
+
+
+Started GET "/leagues" for ::1 at 2019-10-12 15:30:53 -0400
+Processing by LeaguesController#index as */*
+  [1m[36mLeague Load (8.5ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 45ms (Views: 23.9ms | ActiveRecord: 19.5ms | Allocations: 19957)
+
+
+Started GET "/users" for ::1 at 2019-10-12 15:40:30 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (13.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 34ms (Views: 14.9ms | ActiveRecord: 13.2ms | Allocations: 5238)
+
+
+Started POST "/users" for ::1 at 2019-10-12 15:40:42 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"brendan", "email"=>"brendan@test.com", "password"=>"[FILTERED]", "user"=>{"username"=>"brendan", "email"=>"brendan@test.com"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 167)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/users_controller.rb:18:in `create'
+Started GET "/leagues" for ::1 at 2019-10-12 15:40:43 -0400
+Processing by LeaguesController#index as */*
+  [1m[36mLeague Load (1.1ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 32ms (Views: 29.5ms | ActiveRecord: 1.1ms | Allocations: 19527)
+
+
+Started GET "/users" for ::1 at 2019-10-12 15:41:06 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (24.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 55ms (Views: 14.3ms | ActiveRecord: 38.4ms | Allocations: 5388)
+
+
+Started POST "/users" for ::1 at 2019-10-12 15:41:18 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"brendan", "email"=>"p@test.com", "password"=>"[FILTERED]", "user"=>{"username"=>"brendan", "email"=>"p@test.com"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:18:in `create'
+  [1m[36mUser Exists? (1.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "p@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "brendan"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:18:in `create'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "p@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "brendan"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+Completed 422 Unprocessable Entity in 16ms (Views: 0.1ms | ActiveRecord: 3.0ms | Allocations: 7456)
+
+
+Started GET "/leagues" for ::1 at 2019-10-12 15:41:18 -0400
+Processing by LeaguesController#index as */*
+  [1m[36mLeague Load (0.4ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 30ms (Views: 24.6ms | ActiveRecord: 3.4ms | Allocations: 19754)
+
+
+Started GET "/users" for ::1 at 2019-10-12 15:41:38 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 47ms (Views: 12.4ms | ActiveRecord: 31.4ms | Allocations: 5349)
+
+
+Started POST "/users" for ::1 at 2019-10-12 15:41:50 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"brendan", "email"=>"pass@password.com", "password"=>"[FILTERED]", "user"=>{"username"=>"brendan", "email"=>"pass@password.com"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:18:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "pass@password.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `create'
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "brendan"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:18:in `create'
+Completed 422 Unprocessable Entity in 12ms (ActiveRecord: 1.7ms | Allocations: 4057)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Password can't be blank):
+  
+app/controllers/users_controller.rb:18:in `create'
+Started GET "/leagues" for ::1 at 2019-10-12 15:41:50 -0400
+Processing by LeaguesController#index as */*
+  [1m[36mLeague Load (0.5ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 47ms (Views: 31.1ms | ActiveRecord: 14.4ms | Allocations: 19753)
+
+
+Started GET "/users" for ::1 at 2019-10-12 15:43:56 -0400
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/users_controller.rb:3:in `<class:UsersController>'
+app/controllers/users_controller.rb:1:in `<main>'
+Started GET "/users" for ::1 at 2019-10-12 15:44:24 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/users_controller.rb:3:in `<class:UsersController>'
+app/controllers/users_controller.rb:1:in `<main>'
+Started POST "/users" for ::1 at 2019-10-12 15:44:33 -0400
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for UsersController):
+  
+actionpack (6.0.0) lib/abstract_controller/base.rb:131:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/leagues" for ::1 at 2019-10-12 15:44:33 -0400
+Processing by LeaguesController#index as */*
+  [1m[36mLeague Load (0.6ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 108ms (Views: 52.3ms | ActiveRecord: 53.6ms | Allocations: 20492)
+
+
+Started GET "/users" for ::1 at 2019-10-12 15:45:53 -0400
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/users_controller.rb:3:in `<class:UsersController>'
+app/controllers/users_controller.rb:1:in `<main>'
+Started POST "/users" for ::1 at 2019-10-12 15:46:01 -0400
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for UsersController):
+  
+actionpack (6.0.0) lib/abstract_controller/base.rb:131:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/leagues" for ::1 at 2019-10-12 15:46:01 -0400
+Processing by LeaguesController#index as */*
+  [1m[36mLeague Load (0.7ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 56ms (Views: 43.1ms | ActiveRecord: 11.2ms | Allocations: 20492)
+
+
+Started GET "/users" for ::1 at 2019-10-12 15:46:29 -0400
+  [1m[35m (43.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/users_controller.rb:2:in `<class:UsersController>'
+app/controllers/users_controller.rb:1:in `<main>'
+Started POST "/users" for ::1 at 2019-10-12 15:46:38 -0400
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for UsersController):
+  
+actionpack (6.0.0) lib/abstract_controller/base.rb:131:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/leagues" for ::1 at 2019-10-12 15:46:38 -0400
+Processing by LeaguesController#index as */*
+  [1m[36mLeague Load (0.8ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 78ms (Views: 45.0ms | ActiveRecord: 14.2ms | Allocations: 20492)
+
+
+Started GET "/users" for ::1 at 2019-10-12 15:48:26 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:10:in `index'
+Completed 200 OK in 37ms (Views: 11.5ms | ActiveRecord: 17.5ms | Allocations: 5538)
+
+
+Started POST "/users" for ::1 at 2019-10-12 15:48:34 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"ade", "email"=>"pass@pass.com", "password"=>"[FILTERED]", "user"=>{"username"=>"ade", "email"=>"pass@pass.com"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:22:in `create'
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "pass@pass.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "ade"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `create'
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:22:in `create'
+Completed 422 Unprocessable Entity in 212ms (Views: 0.2ms | ActiveRecord: 1.8ms | Allocations: 179601)
+
+
+Started GET "/leagues" for ::1 at 2019-10-12 15:48:34 -0400
+Processing by LeaguesController#index as */*
+  [1m[36mLeague Load (3.3ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 62ms (Views: 52.4ms | ActiveRecord: 8.2ms | Allocations: 19792)
+
+
+Started GET "/users" for ::1 at 2019-10-12 15:49:42 -0400
+  [1m[35m (12.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as */*
+Completed 500 Internal Server Error in 136ms (ActiveRecord: 0.0ms | Allocations: 23223)
+
+
+  
+NoMethodError (undefined method `authorize_request' for #<UsersController:0x00007fe0c54ef450>):
+  
+activesupport (6.0.0) lib/active_support/callbacks.rb:429:in `block in make_lambda'
+activesupport (6.0.0) lib/active_support/callbacks.rb:182:in `block (2 levels) in halting_and_conditional'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.0.0) lib/active_support/callbacks.rb:183:in `block in halting_and_conditional'
+activesupport (6.0.0) lib/active_support/callbacks.rb:514:in `block in invoke_before'
+activesupport (6.0.0) lib/active_support/callbacks.rb:514:in `each'
+activesupport (6.0.0) lib/active_support/callbacks.rb:514:in `invoke_before'
+activesupport (6.0.0) lib/active_support/callbacks.rb:134:in `run_callbacks'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.0) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.0) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:136:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/users" for ::1 at 2019-10-12 15:49:50 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"as", "email"=>"pas@pass.com", "password"=>"[FILTERED]", "user"=>{"username"=>"as", "email"=>"pas@pass.com"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:23:in `create'
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "pas@pass.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "as"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:23:in `create'
+Completed 422 Unprocessable Entity in 183ms (Views: 0.2ms | ActiveRecord: 8.9ms | Allocations: 183198)
+
+
+Started GET "/leagues" for ::1 at 2019-10-12 15:49:50 -0400
+Processing by LeaguesController#index as */*
+  [1m[36mLeague Load (0.9ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 31ms (Views: 19.7ms | ActiveRecord: 9.1ms | Allocations: 20004)
+
+
+Started GET "/users" for ::1 at 2019-10-12 15:51:16 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as */*
+Completed 500 Internal Server Error in 182ms (ActiveRecord: 0.0ms | Allocations: 23219)
+
+
+  
+NoMethodError (undefined method `authorize_request' for #<UsersController:0x00007fa4e063c590>):
+  
+activesupport (6.0.0) lib/active_support/callbacks.rb:429:in `block in make_lambda'
+activesupport (6.0.0) lib/active_support/callbacks.rb:182:in `block (2 levels) in halting_and_conditional'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.0.0) lib/active_support/callbacks.rb:183:in `block in halting_and_conditional'
+activesupport (6.0.0) lib/active_support/callbacks.rb:514:in `block in invoke_before'
+activesupport (6.0.0) lib/active_support/callbacks.rb:514:in `each'
+activesupport (6.0.0) lib/active_support/callbacks.rb:514:in `invoke_before'
+activesupport (6.0.0) lib/active_support/callbacks.rb:134:in `run_callbacks'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.0) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.0) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:136:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/users" for ::1 at 2019-10-12 15:51:35 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"ades", "email"=>"ppps@test.com", "password"=>"[FILTERED]", "user"=>{"username"=>"ades", "email"=>"ppps@test.com"}}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 9.9ms | Allocations: 3716)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/users_controller.rb:21:in `create'
+Started GET "/leagues" for ::1 at 2019-10-12 15:51:35 -0400
+Processing by LeaguesController#index as */*
+  [1m[36mLeague Load (0.8ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 63ms (Views: 51.9ms | ActiveRecord: 3.8ms | Allocations: 20027)
+
+
+Started GET "/users" for ::1 at 2019-10-12 15:51:50 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 23ms (Views: 10.5ms | ActiveRecord: 8.9ms | Allocations: 5368)
+
+
+Started POST "/users" for ::1 at 2019-10-12 15:52:05 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"pass", "email"=>"pass@test.com", "password"=>"[FILTERED]", "user"=>{"username"=>"pass", "email"=>"pass@test.com"}}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 161)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/users_controller.rb:21:in `create'
+Started GET "/leagues" for ::1 at 2019-10-12 15:52:05 -0400
+Processing by LeaguesController#index as */*
+  [1m[36mLeague Load (0.4ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 23ms (Views: 17.2ms | ActiveRecord: 2.6ms | Allocations: 19796)
+
+
+Started GET "/users" for ::1 at 2019-10-12 16:02:39 -0400
+  
+SyntaxError (/Users/adesegunadedeji/Documents/AfroLeague/afro_league_api/app/controllers/users_controller.rb:67: syntax error, unexpected end, expecting end-of-input):
+  
+app/controllers/users_controller.rb:67: syntax error, unexpected end, expecting end-of-input
+app/controllers/users_controller.rb:67: syntax error, unexpected end, expecting end-of-input
+Started GET "/users" for ::1 at 2019-10-12 16:02:52 -0400
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/adesegunadedeji/Documents/AfroLeague/afro_league_api/app/controllers/users_controller.rb:67: syntax error, unexpected end, expecting end-of-input):
+  
+app/controllers/users_controller.rb:67: syntax error, unexpected end, expecting end-of-input
+app/controllers/users_controller.rb:67: syntax error, unexpected end, expecting end-of-input
+Started GET "/users" for ::1 at 2019-10-12 16:04:00 -0400
+  
+SyntaxError (/Users/adesegunadedeji/Documents/AfroLeague/afro_league_api/app/controllers/users_controller.rb:67: syntax error, unexpected end, expecting end-of-input):
+  
+app/controllers/users_controller.rb:67: syntax error, unexpected end, expecting end-of-input
+app/controllers/users_controller.rb:67: syntax error, unexpected end, expecting end-of-input
+Started GET "/users" for ::1 at 2019-10-12 16:04:27 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (7.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 31ms (Views: 11.8ms | ActiveRecord: 16.2ms | Allocations: 5941)
+
+
+Started GET "/users" for ::1 at 2019-10-12 16:04:39 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 1.5ms | Allocations: 1065)
+
+
+Started POST "/users" for ::1 at 2019-10-12 16:04:48 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"rails ", "email"=>"rails@rails.com", "password"=>"[FILTERED]", "user"=>{"username"=>"rails ", "email"=>"rails@rails.com"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:23:in `create'
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "rails@rails.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "rails "], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `create'
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "rails "], ["email", "rails@rails.com"], ["password_digest", "$2a$12$TgNDVe.JCkN.l8DhHDZJjuoxIoMOv.r3T6XMhfyMbs3W0MhvC4RdC"], ["created_at", "2019-10-12 20:04:48.422036"], ["updated_at", "2019-10-12 20:04:48.422036"]]
+  ↳ app/controllers/users_controller.rb:23:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:23:in `create'
+Completed 200 OK in 257ms (Views: 0.3ms | ActiveRecord: 2.4ms | Allocations: 5969)
+
+
+Started GET "/leagues" for ::1 at 2019-10-12 16:04:48 -0400
+Processing by LeaguesController#index as */*
+  [1m[36mLeague Load (1.2ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 52ms (Views: 33.8ms | ActiveRecord: 8.5ms | Allocations: 19907)
+
+
+Started GET "/users" for ::1 at 2019-10-12 16:05:36 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (90.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 94ms (Views: 3.1ms | ActiveRecord: 90.9ms | Allocations: 1183)
+
+

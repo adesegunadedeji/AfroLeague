@@ -1,5 +1,8 @@
 class UsersController < ApplicationController
+  # skip_before_action :verify_authenticity_token
+  # before_action :authorize_request, except: :create
   before_action :set_user, only: [:show, :update, :destroy]
+
 
   # GET /users
   def index
@@ -15,15 +18,26 @@ class UsersController < ApplicationController
 
   # POST /users
   def create
-    @user = User.new(user_params)
- 
+    @user = User.new({"username"=>params["username"], "email"=>params["email"],"password"=>params["password"]})
 
     if @user.save
-      render json: @user, status: :created, location: @user
-    else
-      render json: @user.errors, status: :unprocessable_entity
-    end
-    puts "This is @user #{@user}" #Sting Interpolation
+      session[:user_id] = @user.id
+      render json: @user
+    else 
+      puts "User not Found"
+
+  end
+
+    # if @user.save
+    #   render json: @user, status: :created, location: @user
+    # else
+    #   render json: @user.errors, status: :unprocessable_entity
+    # end
+    # private
+    # def user_params
+    #   pa
+    # end
+    # puts "This is @user #{@user}" #Sting Interpolation
   end
 
   # PATCH/PUT /users/1
@@ -40,14 +54,14 @@ class UsersController < ApplicationController
     @user.destroy
   end
 
-  private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_user
-      @user = User.find(params[:id])
-    end
+  # private
+  #   # Use callbacks to share common setup or constraints between actions.
+  #   def set_user
+  #     @user = User.find(params[:id])
+  #   end
 
-    # Only allow a trusted parameter "white list" through.
-    def user_params
-      params.require(:user).permit(:username, :email, :password, :password_confirmation)
-    end
+  #   # Only allow a trusted parameter "white list" through.
+  #   def user_params
+  #     params.require(:user).permit(:username, :email, :password)
+  #   end
 end
