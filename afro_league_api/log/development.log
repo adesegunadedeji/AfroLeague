@@ -1,0 +1,476 @@
+  [1m[35m (583.4ms)[0m  [1m[35mCREATE DATABASE "afro_league_api_development" ENCODING = 'unicode'[0m
+  [1m[35m (433.7ms)[0m  [1m[35mCREATE DATABASE "afro_league_api_test" ENCODING = 'unicode'[0m
+Started GET "/" for ::1 at 2019-10-12 11:13:32 -0400
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.0) lib/active_record/migration.rb:587:in `check_pending!'
+activerecord (6.0.0) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/favicon.ico" for ::1 at 2019-10-12 11:13:34 -0400
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.0) lib/active_record/migration.rb:587:in `check_pending!'
+activerecord (6.0.0) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (25.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1353340762140345510)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateLeagues (20191012151255)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (10.9ms)[0m  [1m[35mCREATE TABLE "leagues" ("id" bigserial primary key, "player" character varying, "position" character varying, "team" character varying, "coach" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (3.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191012151255"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-10-12 15:13:44.510587"], ["updated_at", "2019-10-12 15:13:44.510587"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(1353340762140345510)[0m
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (3.8ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Blake Griffin"], ["position", "Power Forward"], ["team", "Milwaukee Bucks"], ["coach", "Doc Rivers"], ["created_at", "2019-10-12 15:20:01.404416"], ["updated_at", "2019-10-12 15:20:01.404416"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.3ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Nikola Vučević"], ["position", "Small Forward"], ["team", "Denver Nuggets"], ["coach", "Lloyd Pierce"], ["created_at", "2019-10-12 15:20:01.412566"], ["updated_at", "2019-10-12 15:20:01.412566"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.2ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Kyrie Irving"], ["position", "Center"], ["team", "Oklahoma City Thunder"], ["coach", "David Fizdale"], ["created_at", "2019-10-12 15:20:01.415728"], ["updated_at", "2019-10-12 15:20:01.415728"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.2ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Stephen Curry"], ["position", "Small Forward"], ["team", "Houston Rockets"], ["coach", "Lloyd Pierce"], ["created_at", "2019-10-12 15:20:01.419009"], ["updated_at", "2019-10-12 15:20:01.419009"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.2ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Karl-Anthony Towns"], ["position", "Point Guard"], ["team", "Dallas Mavericks"], ["coach", "Gregg Popovich"], ["created_at", "2019-10-12 15:20:01.422321"], ["updated_at", "2019-10-12 15:20:01.422321"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.3ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Blake Griffin"], ["position", "Shooting Guard"], ["team", "Boston Celtics"], ["coach", "Luke Walton"], ["created_at", "2019-10-12 15:20:01.426287"], ["updated_at", "2019-10-12 15:20:01.426287"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.4ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Kevin Durant"], ["position", "Center"], ["team", "Toronto Raptors"], ["coach", "Lloyd Pierce"], ["created_at", "2019-10-12 15:20:01.432217"], ["updated_at", "2019-10-12 15:20:01.432217"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.3ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Klay Thompson"], ["position", "Center"], ["team", "Chicago Bulls"], ["coach", "Quin Snyder"], ["created_at", "2019-10-12 15:20:01.437015"], ["updated_at", "2019-10-12 15:20:01.437015"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.2ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Kevin Durant"], ["position", "Point Guard"], ["team", "Washington Wizards"], ["coach", "Igor Kokoškov"], ["created_at", "2019-10-12 15:20:01.441588"], ["updated_at", "2019-10-12 15:20:01.441588"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.2ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Dirk Nowitzki"], ["position", "Point Guard"], ["team", "Minnesota Timberwolves"], ["coach", "Dwane Casey"], ["created_at", "2019-10-12 15:20:01.445225"], ["updated_at", "2019-10-12 15:20:01.445225"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.3ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Victor Oladipo"], ["position", "Center"], ["team", "Sacramento Kings"], ["coach", "Dwane Casey"], ["created_at", "2019-10-12 15:20:01.449020"], ["updated_at", "2019-10-12 15:20:01.449020"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.3ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Kawhi Leonard"], ["position", "Shooting Guard"], ["team", "Oklahoma City Thunder"], ["coach", "Dwane Casey"], ["created_at", "2019-10-12 15:20:01.461746"], ["updated_at", "2019-10-12 15:20:01.461746"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.3ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Kyle Lowry"], ["position", "Power Forward"], ["team", "Denver Nuggets"], ["coach", "Dave Joerger"], ["created_at", "2019-10-12 15:20:01.465949"], ["updated_at", "2019-10-12 15:20:01.465949"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.2ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Nikola Vučević"], ["position", "Small Forward"], ["team", "Portland Trail Blazers"], ["coach", "Scott Brooks"], ["created_at", "2019-10-12 15:20:01.469481"], ["updated_at", "2019-10-12 15:20:01.469481"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.4ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Giannis Antetokounmpo"], ["position", "Center"], ["team", "New Orleans Pelicans"], ["coach", "Scott Brooks"], ["created_at", "2019-10-12 15:20:01.473841"], ["updated_at", "2019-10-12 15:20:01.473841"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.4ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Klay Thompson"], ["position", "Small Forward"], ["team", "Los Angeles Clippers"], ["coach", "Lloyd Pierce"], ["created_at", "2019-10-12 15:20:01.478742"], ["updated_at", "2019-10-12 15:20:01.478742"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (1.5ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Nikola Vučević"], ["position", "Center"], ["team", "Milwaukee Bucks"], ["coach", "Quin Snyder"], ["created_at", "2019-10-12 15:20:01.483682"], ["updated_at", "2019-10-12 15:20:01.483682"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.3ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Ben Simmons"], ["position", "Shooting Guard"], ["team", "Cleveland Cavaliers"], ["coach", "Mike D'Antoni"], ["created_at", "2019-10-12 15:20:01.490925"], ["updated_at", "2019-10-12 15:20:01.490925"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.3ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "LaMarcus Aldridge"], ["position", "Power Forward"], ["team", "Memphis Grizzlies"], ["coach", "Mike Budenholzer"], ["created_at", "2019-10-12 15:20:01.494012"], ["updated_at", "2019-10-12 15:20:01.494012"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.4ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Kemba Walker"], ["position", "Point Guard"], ["team", "Memphis Grizzlies"], ["coach", "Scott Brooks"], ["created_at", "2019-10-12 15:20:01.497458"], ["updated_at", "2019-10-12 15:20:01.497458"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.8ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Nikola Jokić"], ["position", "Center"], ["team", "Phoenix Suns"], ["coach", "Erik Spoelstra"], ["created_at", "2019-10-12 15:20:01.500856"], ["updated_at", "2019-10-12 15:20:01.500856"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.3ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Blake Griffin"], ["position", "Small Forward"], ["team", "Sacramento Kings"], ["coach", "Jim Boylen"], ["created_at", "2019-10-12 15:20:01.506801"], ["updated_at", "2019-10-12 15:20:01.506801"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.4ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Giannis Antetokounmpo"], ["position", "Point Guard"], ["team", "Minnesota Timberwolves"], ["coach", "Jim Boylen"], ["created_at", "2019-10-12 15:20:01.510527"], ["updated_at", "2019-10-12 15:20:01.510527"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.2ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Damian Lillard"], ["position", "Power Forward"], ["team", "Los Angeles Clippers"], ["coach", "Alvin Gentry"], ["created_at", "2019-10-12 15:20:01.513986"], ["updated_at", "2019-10-12 15:20:01.513986"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.2ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Nikola Jokić"], ["position", "Small Forward"], ["team", "New Orleans Pelicans"], ["coach", "Ryan Saunders"], ["created_at", "2019-10-12 15:20:01.516694"], ["updated_at", "2019-10-12 15:20:01.516694"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.3ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Klay Thompson"], ["position", "Point Guard"], ["team", "Toronto Raptors"], ["coach", "Larry Drew"], ["created_at", "2019-10-12 15:20:01.520294"], ["updated_at", "2019-10-12 15:20:01.520294"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.2ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "James Harden"], ["position", "Small Forward"], ["team", "Washington Wizards"], ["coach", "Nick Nurse"], ["created_at", "2019-10-12 15:20:01.524487"], ["updated_at", "2019-10-12 15:20:01.524487"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.2ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Kemba Walker"], ["position", "Power Forward"], ["team", "Miami Heat"], ["coach", "Luke Walton"], ["created_at", "2019-10-12 15:20:01.527221"], ["updated_at", "2019-10-12 15:20:01.527221"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.2ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Khris Middleton"], ["position", "Small Forward"], ["team", "Orlando Magic"], ["coach", "Kenny Atkinson"], ["created_at", "2019-10-12 15:20:01.531579"], ["updated_at", "2019-10-12 15:20:01.531579"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.2ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "LeBron James"], ["position", "Small Forward"], ["team", "Los Angeles Lakers"], ["coach", "Gregg Popovich"], ["created_at", "2019-10-12 15:20:01.534450"], ["updated_at", "2019-10-12 15:20:01.534450"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.3ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Dirk Nowitzki"], ["position", "Small Forward"], ["team", "Indiana Pacers"], ["coach", "Dwane Casey"], ["created_at", "2019-10-12 15:20:01.538635"], ["updated_at", "2019-10-12 15:20:01.538635"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.2ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Damian Lillard"], ["position", "Center"], ["team", "Utah Jazz"], ["coach", "Jim Boylen"], ["created_at", "2019-10-12 15:20:01.543340"], ["updated_at", "2019-10-12 15:20:01.543340"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.2ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "James Harden"], ["position", "Power Forward"], ["team", "Washington Wizards"], ["coach", "James Borrego"], ["created_at", "2019-10-12 15:20:01.546944"], ["updated_at", "2019-10-12 15:20:01.546944"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.2ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Anthony Davis"], ["position", "Center"], ["team", "New Orleans Pelicans"], ["coach", "Luke Walton"], ["created_at", "2019-10-12 15:20:01.549578"], ["updated_at", "2019-10-12 15:20:01.549578"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.2ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Kyrie Irving"], ["position", "Point Guard"], ["team", "Sacramento Kings"], ["coach", "Rick Carlisle"], ["created_at", "2019-10-12 15:20:01.554108"], ["updated_at", "2019-10-12 15:20:01.554108"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.7ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Dirk Nowitzki"], ["position", "Power Forward"], ["team", "Brooklyn Nets"], ["coach", "Steve Clifford"], ["created_at", "2019-10-12 15:20:01.559913"], ["updated_at", "2019-10-12 15:20:01.559913"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.2ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "James Harden"], ["position", "Power Forward"], ["team", "Minnesota Timberwolves"], ["coach", "Ryan Saunders"], ["created_at", "2019-10-12 15:20:01.563687"], ["updated_at", "2019-10-12 15:20:01.563687"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.2ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Ben Simmons"], ["position", "Shooting Guard"], ["team", "Chicago Bulls"], ["coach", "Michael Malone"], ["created_at", "2019-10-12 15:20:01.566592"], ["updated_at", "2019-10-12 15:20:01.566592"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.2ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "James Harden"], ["position", "Point Guard"], ["team", "Detroit Pistons"], ["coach", "Ryan Saunders"], ["created_at", "2019-10-12 15:20:01.571884"], ["updated_at", "2019-10-12 15:20:01.571884"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.2ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Kawhi Leonard"], ["position", "Small Forward"], ["team", "Dallas Mavericks"], ["coach", "Lloyd Pierce"], ["created_at", "2019-10-12 15:20:01.574669"], ["updated_at", "2019-10-12 15:20:01.574669"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.2ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Karl-Anthony Towns"], ["position", "Small Forward"], ["team", "Indiana Pacers"], ["coach", "J.B. Bickerstaff"], ["created_at", "2019-10-12 15:20:01.578503"], ["updated_at", "2019-10-12 15:20:01.578503"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.2ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Russell Westbrook"], ["position", "Shooting Guard"], ["team", "Philadelphia 76ers"], ["coach", "David Fizdale"], ["created_at", "2019-10-12 15:20:01.581329"], ["updated_at", "2019-10-12 15:20:01.581329"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.4ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "LaMarcus Aldridge"], ["position", "Small Forward"], ["team", "Toronto Raptors"], ["coach", "Dwane Casey"], ["created_at", "2019-10-12 15:20:01.584090"], ["updated_at", "2019-10-12 15:20:01.584090"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.3ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Joel Embiid"], ["position", "Center"], ["team", "Phoenix Suns"], ["coach", "Terry Stotts"], ["created_at", "2019-10-12 15:20:01.587811"], ["updated_at", "2019-10-12 15:20:01.587811"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.2ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Victor Oladipo"], ["position", "Small Forward"], ["team", "Utah Jazz"], ["coach", "David Fizdale"], ["created_at", "2019-10-12 15:20:01.592463"], ["updated_at", "2019-10-12 15:20:01.592463"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.2ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Anthony Davis"], ["position", "Point Guard"], ["team", "Phoenix Suns"], ["coach", "Brett Brown"], ["created_at", "2019-10-12 15:20:01.597288"], ["updated_at", "2019-10-12 15:20:01.597288"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.6ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Dirk Nowitzki"], ["position", "Center"], ["team", "San Antonio Spurs"], ["coach", "Steve Clifford"], ["created_at", "2019-10-12 15:20:01.600040"], ["updated_at", "2019-10-12 15:20:01.600040"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.2ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Victor Oladipo"], ["position", "Power Forward"], ["team", "Los Angeles Clippers"], ["coach", "Luke Walton"], ["created_at", "2019-10-12 15:20:01.604612"], ["updated_at", "2019-10-12 15:20:01.604612"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.2ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Damian Lillard"], ["position", "Small Forward"], ["team", "Charlotte Hornets"], ["coach", "Dwane Casey"], ["created_at", "2019-10-12 15:20:01.607452"], ["updated_at", "2019-10-12 15:20:01.607452"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.2ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Blake Griffin"], ["position", "Power Forward"], ["team", "New York Knicks"], ["coach", "Nick Nurse"], ["created_at", "2019-10-12 15:20:01.611082"], ["updated_at", "2019-10-12 15:20:01.611082"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.2ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Anthony Davis"], ["position", "Point Guard"], ["team", "Toronto Raptors"], ["coach", "Mike Budenholzer"], ["created_at", "2019-10-12 15:20:01.613802"], ["updated_at", "2019-10-12 15:20:01.613802"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.2ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Kawhi Leonard"], ["position", "Center"], ["team", "Portland Trail Blazers"], ["coach", "Brad Stevens"], ["created_at", "2019-10-12 15:20:01.616857"], ["updated_at", "2019-10-12 15:20:01.616857"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.6ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "LaMarcus Aldridge"], ["position", "Small Forward"], ["team", "Houston Rockets"], ["coach", "James Borrego"], ["created_at", "2019-10-12 15:20:01.621055"], ["updated_at", "2019-10-12 15:20:01.621055"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.2ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Klay Thompson"], ["position", "Point Guard"], ["team", "Orlando Magic"], ["coach", "Igor Kokoškov"], ["created_at", "2019-10-12 15:20:01.626993"], ["updated_at", "2019-10-12 15:20:01.626993"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.2ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Giannis Antetokounmpo"], ["position", "Shooting Guard"], ["team", "Washington Wizards"], ["coach", "Brad Stevens"], ["created_at", "2019-10-12 15:20:01.630309"], ["updated_at", "2019-10-12 15:20:01.630309"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.2ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Bradley Beal"], ["position", "Center"], ["team", "Oklahoma City Thunder"], ["coach", "Doc Rivers"], ["created_at", "2019-10-12 15:20:01.632988"], ["updated_at", "2019-10-12 15:20:01.632988"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.2ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Kawhi Leonard"], ["position", "Shooting Guard"], ["team", "Indiana Pacers"], ["coach", "Gregg Popovich"], ["created_at", "2019-10-12 15:20:01.637221"], ["updated_at", "2019-10-12 15:20:01.637221"]]
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.2ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Kemba Walker"], ["position", "Small Forward"], ["team", "San Antonio Spurs"], ["coach", "Jim Boylen"], ["created_at", "2019-10-12 15:20:01.644734"], ["updated_at", "2019-10-12 15:20:01.644734"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.2ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Anthony Davis"], ["position", "Power Forward"], ["team", "Milwaukee Bucks"], ["coach", "Michael Malone"], ["created_at", "2019-10-12 15:20:01.647601"], ["updated_at", "2019-10-12 15:20:01.647601"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.3ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Dwayne Wade"], ["position", "Power Forward"], ["team", "Detroit Pistons"], ["coach", "Alvin Gentry"], ["created_at", "2019-10-12 15:20:01.651000"], ["updated_at", "2019-10-12 15:20:01.651000"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.6ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Kevin Durant"], ["position", "Power Forward"], ["team", "Indiana Pacers"], ["coach", "Luke Walton"], ["created_at", "2019-10-12 15:20:01.654693"], ["updated_at", "2019-10-12 15:20:01.654693"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.2ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Kyrie Irving"], ["position", "Shooting Guard"], ["team", "Portland Trail Blazers"], ["coach", "Kenny Atkinson"], ["created_at", "2019-10-12 15:20:01.660048"], ["updated_at", "2019-10-12 15:20:01.660048"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.2ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Stephen Curry"], ["position", "Power Forward"], ["team", "Sacramento Kings"], ["coach", "Steve Clifford"], ["created_at", "2019-10-12 15:20:01.663145"], ["updated_at", "2019-10-12 15:20:01.663145"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.2ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Bradley Beal"], ["position", "Point Guard"], ["team", "Brooklyn Nets"], ["coach", "Nick Nurse"], ["created_at", "2019-10-12 15:20:01.667087"], ["updated_at", "2019-10-12 15:20:01.667087"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.2ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Nikola Jokić"], ["position", "Small Forward"], ["team", "Cleveland Cavaliers"], ["coach", "Doc Rivers"], ["created_at", "2019-10-12 15:20:01.671073"], ["updated_at", "2019-10-12 15:20:01.671073"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.2ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Russell Westbrook"], ["position", "Small Forward"], ["team", "Cleveland Cavaliers"], ["coach", "J.B. Bickerstaff"], ["created_at", "2019-10-12 15:20:01.674808"], ["updated_at", "2019-10-12 15:20:01.674808"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.3ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Nikola Vučević"], ["position", "Power Forward"], ["team", "Cleveland Cavaliers"], ["coach", "David Fizdale"], ["created_at", "2019-10-12 15:20:01.678463"], ["updated_at", "2019-10-12 15:20:01.678463"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.3ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Damian Lillard"], ["position", "Power Forward"], ["team", "Los Angeles Clippers"], ["coach", "James Borrego"], ["created_at", "2019-10-12 15:20:01.683107"], ["updated_at", "2019-10-12 15:20:01.683107"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.2ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Kyrie Irving"], ["position", "Power Forward"], ["team", "New York Knicks"], ["coach", "Billy Donovan"], ["created_at", "2019-10-12 15:20:01.686794"], ["updated_at", "2019-10-12 15:20:01.686794"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.3ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Ben Simmons"], ["position", "Point Guard"], ["team", "Brooklyn Nets"], ["coach", "Ryan Saunders"], ["created_at", "2019-10-12 15:20:01.691414"], ["updated_at", "2019-10-12 15:20:01.691414"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.3ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "D'Angelo Russell"], ["position", "Power Forward"], ["team", "Chicago Bulls"], ["coach", "J.B. Bickerstaff"], ["created_at", "2019-10-12 15:20:01.695425"], ["updated_at", "2019-10-12 15:20:01.695425"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.9ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Stephen Curry"], ["position", "Shooting Guard"], ["team", "Phoenix Suns"], ["coach", "Kenny Atkinson"], ["created_at", "2019-10-12 15:20:01.700436"], ["updated_at", "2019-10-12 15:20:01.700436"]]
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (3.0ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Russell Westbrook"], ["position", "Shooting Guard"], ["team", "Brooklyn Nets"], ["coach", "Billy Donovan"], ["created_at", "2019-10-12 15:20:01.709121"], ["updated_at", "2019-10-12 15:20:01.709121"]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (3.5ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Kyle Lowry"], ["position", "Shooting Guard"], ["team", "Los Angeles Clippers"], ["coach", "Larry Drew"], ["created_at", "2019-10-12 15:20:01.719600"], ["updated_at", "2019-10-12 15:20:01.719600"]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.5ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Nikola Jokić"], ["position", "Small Forward"], ["team", "Portland Trail Blazers"], ["coach", "Erik Spoelstra"], ["created_at", "2019-10-12 15:20:01.730160"], ["updated_at", "2019-10-12 15:20:01.730160"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.4ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Joel Embiid"], ["position", "Point Guard"], ["team", "Los Angeles Clippers"], ["coach", "Nick Nurse"], ["created_at", "2019-10-12 15:20:01.735032"], ["updated_at", "2019-10-12 15:20:01.735032"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.2ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Ben Simmons"], ["position", "Small Forward"], ["team", "Sacramento Kings"], ["coach", "Alvin Gentry"], ["created_at", "2019-10-12 15:20:01.739507"], ["updated_at", "2019-10-12 15:20:01.739507"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.3ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "LaMarcus Aldridge"], ["position", "Power Forward"], ["team", "Indiana Pacers"], ["coach", "Ryan Saunders"], ["created_at", "2019-10-12 15:20:01.763525"], ["updated_at", "2019-10-12 15:20:01.763525"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (1.0ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Kevin Durant"], ["position", "Point Guard"], ["team", "Detroit Pistons"], ["coach", "Kenny Atkinson"], ["created_at", "2019-10-12 15:20:01.768536"], ["updated_at", "2019-10-12 15:20:01.768536"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.3ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "LaMarcus Aldridge"], ["position", "Point Guard"], ["team", "Detroit Pistons"], ["coach", "Jim Boylen"], ["created_at", "2019-10-12 15:20:01.773630"], ["updated_at", "2019-10-12 15:20:01.773630"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.4ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Nikola Jokić"], ["position", "Power Forward"], ["team", "Chicago Bulls"], ["coach", "Ryan Saunders"], ["created_at", "2019-10-12 15:20:01.777871"], ["updated_at", "2019-10-12 15:20:01.777871"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.3ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Kyrie Irving"], ["position", "Small Forward"], ["team", "Cleveland Cavaliers"], ["coach", "Dave Joerger"], ["created_at", "2019-10-12 15:20:01.782339"], ["updated_at", "2019-10-12 15:20:01.782339"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.3ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Kawhi Leonard"], ["position", "Small Forward"], ["team", "Los Angeles Lakers"], ["coach", "Quin Snyder"], ["created_at", "2019-10-12 15:20:01.786828"], ["updated_at", "2019-10-12 15:20:01.786828"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.4ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Khris Middleton"], ["position", "Small Forward"], ["team", "Los Angeles Lakers"], ["coach", "Mike D'Antoni"], ["created_at", "2019-10-12 15:20:01.791024"], ["updated_at", "2019-10-12 15:20:01.791024"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.3ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Victor Oladipo"], ["position", "Center"], ["team", "Detroit Pistons"], ["coach", "Kenny Atkinson"], ["created_at", "2019-10-12 15:20:01.795473"], ["updated_at", "2019-10-12 15:20:01.795473"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.4ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Russell Westbrook"], ["position", "Small Forward"], ["team", "New York Knicks"], ["coach", "Billy Donovan"], ["created_at", "2019-10-12 15:20:01.799626"], ["updated_at", "2019-10-12 15:20:01.799626"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.4ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "LeBron James"], ["position", "Point Guard"], ["team", "Utah Jazz"], ["coach", "Lloyd Pierce"], ["created_at", "2019-10-12 15:20:01.803696"], ["updated_at", "2019-10-12 15:20:01.803696"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.3ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Dwayne Wade"], ["position", "Power Forward"], ["team", "Brooklyn Nets"], ["coach", "David Fizdale"], ["created_at", "2019-10-12 15:20:01.807821"], ["updated_at", "2019-10-12 15:20:01.807821"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.3ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "LeBron James"], ["position", "Point Guard"], ["team", "Boston Celtics"], ["coach", "Dwane Casey"], ["created_at", "2019-10-12 15:20:01.812080"], ["updated_at", "2019-10-12 15:20:01.812080"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.3ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Kyrie Irving"], ["position", "Center"], ["team", "Brooklyn Nets"], ["coach", "James Borrego"], ["created_at", "2019-10-12 15:20:01.816437"], ["updated_at", "2019-10-12 15:20:01.816437"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.3ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Nikola Vučević"], ["position", "Shooting Guard"], ["team", "Los Angeles Lakers"], ["coach", "Jim Boylen"], ["created_at", "2019-10-12 15:20:01.820191"], ["updated_at", "2019-10-12 15:20:01.820191"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.4ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Anthony Davis"], ["position", "Power Forward"], ["team", "Dallas Mavericks"], ["coach", "Mike D'Antoni"], ["created_at", "2019-10-12 15:20:01.824047"], ["updated_at", "2019-10-12 15:20:01.824047"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.4ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Blake Griffin"], ["position", "Power Forward"], ["team", "Boston Celtics"], ["coach", "Terry Stotts"], ["created_at", "2019-10-12 15:20:01.828290"], ["updated_at", "2019-10-12 15:20:01.828290"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.4ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Paul George"], ["position", "Small Forward"], ["team", "New York Knicks"], ["coach", "Brett Brown"], ["created_at", "2019-10-12 15:20:01.833304"], ["updated_at", "2019-10-12 15:20:01.833304"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.4ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Dwayne Wade"], ["position", "Power Forward"], ["team", "Atlanta Hawks"], ["coach", "Billy Donovan"], ["created_at", "2019-10-12 15:20:01.840142"], ["updated_at", "2019-10-12 15:20:01.840142"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.3ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Kyle Lowry"], ["position", "Power Forward"], ["team", "Portland Trail Blazers"], ["coach", "Steve Kerr"], ["created_at", "2019-10-12 15:20:01.845841"], ["updated_at", "2019-10-12 15:20:01.845841"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.4ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Nikola Vučević"], ["position", "Center"], ["team", "Golden State Warriors"], ["coach", "Larry Drew"], ["created_at", "2019-10-12 15:20:01.850074"], ["updated_at", "2019-10-12 15:20:01.850074"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.3ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Bradley Beal"], ["position", "Shooting Guard"], ["team", "Minnesota Timberwolves"], ["coach", "Doc Rivers"], ["created_at", "2019-10-12 15:20:01.855593"], ["updated_at", "2019-10-12 15:20:01.855593"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.4ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Damian Lillard"], ["position", "Small Forward"], ["team", "Golden State Warriors"], ["coach", "Luke Walton"], ["created_at", "2019-10-12 15:20:01.860072"], ["updated_at", "2019-10-12 15:20:01.860072"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLeague Create (0.3ms)[0m  [1m[32mINSERT INTO "leagues" ("player", "position", "team", "coach", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["player", "Joel Embiid"], ["position", "Point Guard"], ["team", "Toronto Raptors"], ["coach", "Dwane Casey"], ["created_at", "2019-10-12 15:20:01.864463"], ["updated_at", "2019-10-12 15:20:01.864463"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/leagues" for ::1 at 2019-10-12 11:20:41 -0400
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LeaguesController#index as HTML
+  [1m[36mLeague Load (1.1ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 64ms (Views: 51.6ms | ActiveRecord: 7.9ms | Allocations: 20473)
+
+
+Started GET "/league" for ::1 at 2019-10-12 11:42:01 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/league"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/leagues" for ::1 at 2019-10-12 11:42:16 -0400
+Processing by LeaguesController#index as */*
+  [1m[36mLeague Load (2.3ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 45ms (Views: 30.7ms | ActiveRecord: 10.4ms | Allocations: 20487)
+
+
+Started GET "/leagues" for ::1 at 2019-10-12 11:42:21 -0400
+Processing by LeaguesController#index as */*
+  [1m[36mLeague Load (0.6ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 32ms (Views: 31.0ms | ActiveRecord: 0.6ms | Allocations: 15403)
+
+
+Started GET "/leagues" for ::1 at 2019-10-12 11:43:07 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LeaguesController#index as */*
+  [1m[36mLeague Load (0.7ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 85ms (Views: 76.3ms | ActiveRecord: 6.9ms | Allocations: 20476)
+
+
+Started GET "/leagues" for ::1 at 2019-10-12 11:43:11 -0400
+Processing by LeaguesController#index as */*
+  [1m[36mLeague Load (0.9ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 18ms (Views: 16.3ms | ActiveRecord: 0.9ms | Allocations: 15403)
+
+
+Started GET "/leagues" for ::1 at 2019-10-12 11:44:24 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LeaguesController#index as */*
+  [1m[36mLeague Load (3.5ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 90ms (Views: 63.2ms | ActiveRecord: 21.8ms | Allocations: 20477)
+
+
+Started GET "/leagues" for ::1 at 2019-10-12 11:44:42 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LeaguesController#index as */*
+  [1m[36mLeague Load (0.5ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 64ms (Views: 57.9ms | ActiveRecord: 4.5ms | Allocations: 20477)
+
+
