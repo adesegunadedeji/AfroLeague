@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class League extends Component {
+class Player extends Component {
 
     constructor(){
         super()
@@ -24,6 +24,8 @@ class League extends Component {
     }
 
 
+
+
     render () {
         const player = this.state.player.map((playerProfile)=>{
         return <div key = {playerProfile.id}>
@@ -38,4 +40,4 @@ class League extends Component {
         )
     }
   }
-  export default League
+  export default Player
