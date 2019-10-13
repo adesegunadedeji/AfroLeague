@@ -22,10 +22,10 @@ class UsersController < ApplicationController
 
     if @user.save
       session[:user_id] = @user.id
-      render json: @user
+      render json: @user, status: :created
     else 
       puts "User not Found"
-      render json: @user.errors
+      render json: @user.errors, status: :unprocessable_entity
   end
 
     # if @user.save

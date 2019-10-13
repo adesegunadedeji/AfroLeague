@@ -6,20 +6,21 @@ class Register extends Component {
         this.state = {
             username: null,
             email: null,
-            password: null
+            password: null,
+            registrationErrors: ""
         }
     }
     handleChange=(e)=>{
+        console.log(this.state)
         this.setState({
             [e.target.name]:e.target.value
          })
-        console.log(this.state)
     }
 
     handleSubmit=(e)=>{
         e.preventDefault();
         console.log("Submitted Form")
-        //Add Handle Register Function
+        // //Add Handle Register Function
         this.props.handleRegister(this.state)
     }
 
@@ -29,12 +30,12 @@ class Register extends Component {
                 <h1> Register</h1>
                 <form onSubmit ={this.handleSubmit}>
                 <label htmlFor="username">Username</label>
-                <input type ="text" name = "username"  onChange={this.handleChange}/>
+                <input type ="text" name = "username" onChange={this.handleChange}/>
                 <label htmlFor="email">email</label>
-                <input type ="text" name = "email"  onChange={this.handleChange}/>
+                <input type ="text" name = "email" onChange={this.handleChange}/>
                 <label htmlFor="password">Password</label>
                 <input type ="password" name = "password" onChange={this.handleChange}/>
-                <input type ="submit"></input>
+                <button type ="submit">Submit</button>
                 </form>
             </div>
     
