@@ -2,6 +2,7 @@ import React , {Component} from 'react';
 import './App.css';
 import Player from './components/Player/Player';
 import Register from './components/Register/Register'
+import {BrowserRouter,Route,Switch} from 'react-router-dom'
 
 class App extends Component {
 
@@ -31,8 +32,6 @@ class App extends Component {
   }
   handleRegister = async(formData)=>{
     try{
-
-  
     console.log(formData)
     const registerResponse = await fetch(`http://localhost:3001/users`,{
         method: "POST",
@@ -58,15 +57,45 @@ class App extends Component {
   }
 }
 
+// //HANDLELOGIN
+// handleLogin = async(formData)=> {
+//   try{
+//   console.log("Logging In", formData)
+//   const loginResponse = await fetch(`http://localhost:3001/login`,{
+//     method: "POST",
+//     body: JSON.stringify(formData),
+//     credentials: "include",
+//     headers:{
+//       "Content-Type": "application/json"
+//     }
+//   })
+//   const parsedResponse = await loginResponse.json();
+//   console.log("Parsed Response from Login")
+//   if(parsedResponse.username){
+//       console.log("sucessful Login")
+//       this.setState({
+//         loggedIn: true,
+//       })
+//   }
+
+//   }
+// catch(err){
+//   console.log(err)
+// }
+// }
   render(){
   return (
-    <div className="App">
+    <BrowserRouter>
+    <Switch>
+      <div className="App">
        {
           this.state.loggedIn ?
         <Player/>:
         <Register handleRegister={this.handleRegister}/>
        }
-    </div>
+    </div >
+    </Switch>
+    </BrowserRouter>
   );
   }
 }

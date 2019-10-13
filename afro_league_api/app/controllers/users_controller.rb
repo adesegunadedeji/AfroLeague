@@ -18,14 +18,14 @@ class UsersController < ApplicationController
 
   # POST /users
   def create
-    @user = User.new({"username"=>params["username"], "email"=>params["email"],"password"=>params["password"]})
+    @user = User.new({"username"=>params["username"], "email"=>params["email"],"password"=>params["password"],"password_confirmation"=>params["password_confirmation"]})
 
     if @user.save
       session[:user_id] = @user.id
       render json: @user
     else 
       puts "User not Found"
-
+      render json: @user.errors
   end
 
     # if @user.save
