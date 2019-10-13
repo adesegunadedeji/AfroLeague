@@ -22,6 +22,13 @@ class Home extends Component{
           console.log(err)
         } 
       }
+      handleSuccessfulAuth(data) {
+        //TODO Update Parent Component
+        //Redirect the User
+        this.props.handleLogin(data);
+        this.props.history.push("/dashboard")
+      }
+
       handleRegister = async(formData)=>{
         try{
         console.log(formData)
@@ -33,28 +40,30 @@ class Home extends Component{
                 "acccept": "application/json",
             }
         })
+
         const parsedResponse = await registerResponse.json();
         console.log("ParsedResponse from Registration",parsedResponse)
-        if(parsedResponse.username !== null){
-            console.log("Successful Registration")
+        if(parsedResponse){
             this.setState({
                 username:parsedResponse.username,
                 email: parsedResponse.email,
                 password: parsedResponse.password
             })
+            this.handleSuccessfulAuth(parsedResponse);
+            console.log("Successful Registration")
         }
       }
       catch(err){
         console.log(err)
       }
     }
-    
+
     render(){
         return(
             <div>
                 <h1>Home</h1>
                 <h1>Status: {this.props.logged_in}</h1>
-                <Register  handleRegister={this.handleRegister}/>
+                <Register  handleRegister={this.handleRegister} handleSuccessfulAuth={this.handleSuccessfulAuth}/>
             </div>
         )
     }

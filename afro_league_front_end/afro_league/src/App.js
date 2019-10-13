@@ -12,6 +12,13 @@ class App extends Component {
           logged_in: "Not logged_In",
           user:{}
         }
+        this.handleLogin = this.handleLogin.bind(this)
+      }
+      handleLogin(parseResponse){
+        this.setState({
+          logged_in: "Logged In",
+          user: parseResponse
+        })
       }
 
   render(){
@@ -21,7 +28,7 @@ class App extends Component {
     <Switch>
       <Route exact path={"/"} 
       render = {props =>(
-        <Home {...props} 
+        <Home {...props} handleLogin ={this.handleLogin}
         logged_in = {this.state.logged_in}/>
       )} />
       <Route 
