@@ -1,7 +1,7 @@
 import React , {Component} from 'react';
 import './App.css';
 import Player from './components/Player/Player';
-import Register from './components/Register/Register'
+import Register from './components/Authentication/Register'
 import {BrowserRouter,Route,Switch} from 'react-router-dom'
 
 class App extends Component {
