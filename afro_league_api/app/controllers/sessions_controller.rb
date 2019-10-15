@@ -18,29 +18,16 @@ class SessionsController < ApplicationController
       render json: { status: 401 }
     end
   end
-  #   user = User
-  #           .find_by(email: params[:email])
-  #           .try(:authenticate, (params[:password])
-  #   if user
-  #     session[:user_id] = user.id #set user Id equal to User ID found
-  #     render json: {
-  #       status: :created,
-  #       logged_in: true,
-  #       user: user
-  #     }
-  #   else
-  #    render json: {status: 401}
-  #   end
-  # end
   def logged_in
     if @current_user
-      render json: {
+      render json: { #NEED TO work on Logged_in Route.tomorrow
         logged_in: true,
         user: @current_user
       }
     else
       render json: {
-        logged_in:false
+        logged_in: false,
+        user: @current_user
       }
     end
   end

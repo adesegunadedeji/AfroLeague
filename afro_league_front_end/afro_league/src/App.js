@@ -14,13 +14,31 @@ class App extends Component {
         }
         this.handleLogin = this.handleLogin.bind(this)
       }
-      handleLogin(parseResponse){
+
+      handleLogin(parsedResponse){
         this.setState({
           logged_in: "Logged In",
-          user: parseResponse
+          user: parsedResponse
         })
       }
 
+      componentDidMount(){
+        console.log("Component Did Mount")
+        this.checkLoginStatus()
+      }
+
+      checkLoginStatus = async()=>{
+        try{ 
+        const loginStatus  = await fetch("http://localhost:3001/logged_in",{
+            method: "GET",
+            withCredentials: true
+        });
+        console.log("Loggedin??",loginStatus)
+      }
+      catch(err){
+        console.log(err)
+      } 
+    }
   render(){
   return (
     <div className="App">

@@ -44,21 +44,20 @@ class Home extends Component{
 
         const parsedResponse = await registerResponse.json();
         console.log("ParsedResponse from Registration",parsedResponse)
-        // if(parsedResponse){
-        //     this.setState({
-        //         username:parsedResponse.username,
-        //         email: parsedResponse.email,
-        //         password: parsedResponse.password
-        //     })
-        //     this.handleSuccessfulAuth(parsedResponse);
-        //     console.log("Successful Registration")
-        // }
+        if(parsedResponse){
+            // this.setState({
+            //     username:parsedResponse.username,
+            //     email: parsedResponse.email,
+            //     password: parsedResponse.password
+            // })
+            this.handleSuccessfulAuth(parsedResponse);
+            console.log("Successful Registration")
+        }
       }
       catch(err){
         console.log("Register Error", err)
       }
     }
-
     handleLogin = async(formData) =>{
         try {
         console.log("Logging In", formData)
@@ -72,12 +71,13 @@ class Home extends Component{
         })
         const parsedResponse = await loginResponse.json();
         console.log("Response from Login", parsedResponse)
-        if(parsedResponse){
-            this.setState({
-                username:parsedResponse.username,
-                email: parsedResponse.email,
-                password: parsedResponse.password
-            }) 
+        if(parsedResponse.logged_in){
+            // this.setState({
+            //     username:parsedResponse.username,
+            //     email: parsedResponse.email,
+            //     password: parsedResponse.password
+            // }) 
+            this.handleSuccessfulAuth(parsedResponse);
         }
         }
     catch(err){
