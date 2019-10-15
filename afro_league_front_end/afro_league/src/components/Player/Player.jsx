@@ -13,7 +13,6 @@ class Player extends Component {
         console.log("Component did Mount");
         this.getPlayer();
     }
-
     getPlayer = async() =>{
         try{ 
         const player= await fetch('http://localhost:3001/leagues')

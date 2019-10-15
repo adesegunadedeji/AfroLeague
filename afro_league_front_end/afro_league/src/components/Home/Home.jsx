@@ -4,6 +4,9 @@ import Login from '../Authentication/Login'
 class Home extends Component{
     constructor(props){
         super(props);
+
+        this.handleSuccessfulAuth =this.handleSuccessfulAuth.bind(this);
+        this.handleLogoutClick =this.handleLogoutClick.bind(this);
     }
 
     componentDidMount(){
@@ -69,6 +72,7 @@ class Home extends Component{
             "acccept": "application/json",
           }
         })
+
         const parsedResponse = await loginResponse.json();
         console.log("Response from Login", parsedResponse)
         if(parsedResponse.logged_in){
@@ -84,11 +88,25 @@ class Home extends Component{
         console.log("Login Error", err)
     }
 }
+
+    handleLogoutClick = async()=>{
+        try {
+                await fetch(`http://localhost:3001/logout`,{
+                method: "DELETE",
+        })
+        this.props.handleLogout();
+        }
+        catch(err){
+            console.log("LOGOUT ERROR",err)
+        }
+    }
+
     render(){
         return(
             <div>
                 <h1>Home</h1>
                 <h1>Status: {this.props.logged_in}</h1>
+                <button onClick={()=> this.handleLogoutClick()}>Logout</button>
                 <Register  handleRegister={this.handleRegister} handleSuccessfulAuth={this.handleSuccessfulAuth}/>
                 <Login handleLogin={this.handleLogin}/>
             </div>

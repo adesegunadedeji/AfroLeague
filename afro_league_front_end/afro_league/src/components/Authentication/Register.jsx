@@ -1,4 +1,5 @@
 import React , {Component} from 'react';
+import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
 class Register extends Component {
     constructor(props){
@@ -27,17 +28,25 @@ class Register extends Component {
     render(){
         return (
             <div className="register">
-                <h1> Register</h1>
-                <form onSubmit ={this.handleSubmit}>
-                <label htmlFor="username">Username</label>
-                <input type ="text" name = "username" onChange={this.handleChange}/>
-                <label htmlFor="email">email</label>
-                <input type ="text" name = "email" onChange={this.handleChange}/>
-                <label htmlFor="password">Password</label>
-                <input type ="password" name = "password" onChange={this.handleChange}/>
-                <button type ="submit">Submit</button>
-                </form>
-            </div>
+                <h1>Register</h1>
+<Form inline onSubmit ={this.handleSubmit}>
+    <FormGroup>
+        <Label for="exampleEmail" hidden>Username</Label>
+        <Input type="username" name="username" id="exampleusername" placeholder="username" onChange={this.handleChange} />
+    </FormGroup>
+    <FormGroup>
+        <Label for="exampleEmail" hidden>Email</Label>
+   <Input type="email" name="email" id="exampleEmail" placeholder="Email" onChange={this.handleChange} />
+ </FormGroup>
+ {' '}
+ <FormGroup>
+   <Label for="examplePassword" hidden>Password</Label>
+   <Input type="password" name="password" id="examplePassword" placeholder="Password" onChange={this.handleChange} />
+ </FormGroup>
+    {' '}
+    <Button>Submit</Button>
+    </Form>
+</div>
     
         )
     }
