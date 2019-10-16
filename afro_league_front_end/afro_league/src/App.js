@@ -20,7 +20,7 @@ class App extends Component {
 
       componentDidMount(){
         console.log("Component Did Mount")
-        // this.checkLoginStatus()
+        this.checkLoginStatus()
       }
 
 
@@ -31,8 +31,6 @@ class App extends Component {
         })
       }
 
-   
-
       handleLogout() {
         this.setState({
           loggedInStatus: "NOT_LOGGED_IN",
@@ -40,18 +38,22 @@ class App extends Component {
         });
       }
 
-    //   checkLoginStatus = async()=>{
-    //     try{ 
-    //     const loginStatus  = await fetch("http://localhost:3001/logged_in",{
-    //         method: "GET",
-    //         withCredentials: true
-    //     });
-    //     console.log("Loggedin??",loginStatus)
-    //   }
-    //   catch(err){
-    //     console.log(err)
-    //   } 
-    // }
+      checkLoginStatus = async()=>{
+        try{ 
+        const loginStatus  = await fetch(`http://localhost:3001/logged_in`,{
+            method: "GET",
+            headers:{
+              "Content-Type": "application/json",
+              "acccept": "application/json"
+          }
+        });
+        const parsedResponse = await loginStatus.json();
+        console.log("Loggedin??",parsedResponse)
+      }
+      catch(err){
+        console.log(err)
+      } 
+    }
 
     createPlayer =async(formData) =>{
       try{

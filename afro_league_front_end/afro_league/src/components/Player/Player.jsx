@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import EditPlayer from './EditPlayer';
 
 class Player extends Component {
 
@@ -38,14 +39,12 @@ class Player extends Component {
                 }
             })
             const parsedResponse = await updatePlayer.json();
-            console.log(parsedResponse)
-            if(parsedResponse){
-                console.log("Update the Player", formData)
+            console.log("PARSED RESPONSE!!!!!!!!!", parsedResponse)
                 this.setState({
-                    player: this.state.player.map(player => player._id === id?
-                        parsedResponse.league: player)
+                    player: this.state.player.map(player => player.id === id?
+                        player: parsedResponse)
                 })
-            }
+            console.log("player", this.state.player)
         }
         catch(err){
             console.log(err)
@@ -68,10 +67,14 @@ class Player extends Component {
         }
     }
     render () {
-        const player = this.state.player.map((playerProfile)=>{
-        return <div key = {playerProfile.id}>
-                    <p>{playerProfile.player}</p>   
-            </div>
+       let player = this.state.player.map(player =>{
+        console.log("This is player ID",player)
+        return <ul key = {player.id}>
+                    <li>{player.player}</li>
+                    <li>
+                    <EditPlayer player={player}  updatePlayer ={this.updatePlayer}/>
+                    </li>
+            </ul>
         })
         return ( 
             <div className = "playerRoster">
