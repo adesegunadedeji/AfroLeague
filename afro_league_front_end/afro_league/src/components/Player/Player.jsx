@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import EditPlayer from './EditPlayer';
-
+import {Button} from 'reactstrap';
 class Player extends Component {
 
     constructor(){
@@ -42,7 +42,7 @@ class Player extends Component {
             console.log("PARSED RESPONSE!!!!!!!!!", parsedResponse)
                 this.setState({
                     player: this.state.player.map(player => player.id === id?
-                        player: parsedResponse)
+                    parsedResponse: player)
                 })
             console.log("player", this.state.player)
         }
@@ -56,10 +56,8 @@ class Player extends Component {
             const deletePlayer = await fetch(`http://localhost:3001/leagues/${id}`,{
                 method: "DELETE",
             });
-            const parsedResponse = await deletePlayer.json();
-            //Need to add If CHeck
             this.setState({
-                player: this.state.player.filter(player=> player._id !==id)
+                player: this.state.player.filter(player=> player.id !==id)
             })
         }
         catch(err){
@@ -73,6 +71,8 @@ class Player extends Component {
                     <li>{player.player}</li>
                     <li>
                     <EditPlayer player={player}  updatePlayer ={this.updatePlayer}/>
+                    <Button  outline color="danger" onClick={()=>{this.deletePlayer(player.id)
+    }}>Delete Player</Button>
                     </li>
             </ul>
         })

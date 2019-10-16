@@ -29,7 +29,7 @@ this.setState({
 handleSubmit= async (e)=>{
     e.preventDefault();
     console.log("Ready to Edit")
-    const validUpdate = await this.props.updatePlayer(this.props.player._id, this.state);
+    const validUpdate = await this.props.updatePlayer(this.props.player.id, this.state);
     if(validUpdate === true){
         this.toggle(); 
     }
