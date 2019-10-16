@@ -3,9 +3,11 @@ import './App.css';
 import Home from './components/Home/Home'
 import Dashboard from './components/Dashboard/Dashboard'
 import NewPlayer from './components/Player/NewPlayer'
+import Footer from './components/Footer/Footer'
 
 import {BrowserRouter,Route,Switch} from 'react-router-dom'
 import Player from './components/Player/Player';
+import NavbarReact from './components/Navbar/Navbar';
 
 class App extends Component {
       constructor(){
@@ -83,6 +85,7 @@ class App extends Component {
   render(){
   return (
     <div className="App">
+      <NavbarReact/>
     <BrowserRouter>
     <Switch>
       <Route exact path={"/"} 
@@ -101,6 +104,7 @@ class App extends Component {
        createPlayer={this.createPlayer}/>}/>
     </Switch>
     </BrowserRouter>
+    <Footer/>
     </div>
   );
   }
