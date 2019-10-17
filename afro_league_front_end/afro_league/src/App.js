@@ -8,6 +8,7 @@ import Footer from './components/Footer/Footer'
 import {BrowserRouter,Route,Switch} from 'react-router-dom'
 import Player from './components/Player/Player';
 import NavbarReact from './components/Navbar/Navbar';
+import Contact from './components/Contact/Contact';
 
 class App extends Component {
       constructor(){
@@ -18,6 +19,7 @@ class App extends Component {
         }
         this.handleLogin = this.handleLogin.bind(this)
         this.handleLogout = this.handleLogout.bind(this)
+        this.handleSuccessfulAuth =this.handleSuccessfulAuth.bind(this);
       }
 
       componentDidMount(){
@@ -26,9 +28,9 @@ class App extends Component {
       }
 
 
-      handleLogin(parsedResponse){
+      handleLoginStatus(parsedResponse){
         this.setState({
-          logged_in: "Logged In",
+          logged_in: "logged_ in",
           user: parsedResponse
         })
       }
@@ -36,7 +38,8 @@ class App extends Component {
       handleLogout() {
         this.setState({
           loggedInStatus: "NOT_LOGGED_IN",
-          user: {}
+          user: {
+          }
         });
       }
 
@@ -63,6 +66,7 @@ class App extends Component {
           console.log("CREATING NEW PLAYER")
           const newPlayer = await fetch('http://localhost:3001/leagues',{
               method:"POST",
+              credentials: "include",
               body: JSON.stringify(formData),
               headers:{
                   "Content-Type": "application/json",
@@ -76,21 +80,57 @@ class App extends Component {
                   player: [parsedResponse,...this.state.player]
               })
           }
-  
       }
       catch(err){
           console.log(err)
       }
   }
 
+  handleLogin = async(formData) =>{
+    try{
+        console.log("Logging In", formData)
+        const loginResponse = await fetch(`http://localhost:3001/login`,{
+            method: "POST",
+            body: JSON.stringify(formData),
+            credentials: "include",
+            headers:{
+        "Content-Type": "application/json",
+        "acccept": "application/json",
+      }
+    })
+        const parsedResponse = await loginResponse.json();
+        console.log("Response from Login", parsedResponse)
+        if(parsedResponse){
+        this.setState({
+            username:parsedResponse.username,
+            email: parsedResponse.email,
+            password: parsedResponse.password
+        }) 
+        this.handleSuccessfulAuth(parsedResponse);
+    }
+    }
+    catch(err){
+        console.log("Login Error", err)
+}
+}
+
+
+handleSuccessfulAuth(data) {
+  //TODO Update Parent Component
+  //Redirect the User
+  this.handleLoginStatus(data);
+  console.log(data)
+  // this.props.history.push("/dashboard")
+}
+
   render(){
   return (
     <div className="App">
-      <NavbarReact/>
+      <NavbarReact handleLogin ={this.handleLogin}/>
     <BrowserRouter>
     <Switch>
       <Route exact path={"/"} 
-      render = {props =>(
+      render = {props =>( 
         <Home {...props} handleLogin ={this.handleLogin}
         logged_in = {this.state.logged_in} handleLogout={this.handleLogout}/>
       )} />
@@ -101,8 +141,10 @@ class App extends Component {
          logged_in = {this.state.logged_in}/>
        )}/>
        <Route exact path={"/players"} component ={Player}/>
+       <Route exact path={"/contact"} component ={Contact}/>
        < Route path ='/newPlayer' render={(props)=> <NewPlayer {...props} 
        createPlayer={this.createPlayer}/>}/>
+      <Route exact path={"/players"} component ={Player}/>
     </Switch>
     </BrowserRouter>
     <Footer/>

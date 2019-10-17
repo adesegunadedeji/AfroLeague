@@ -64,6 +64,7 @@ class Player extends Component {
             console.log(err)
         }
     }
+    
     render () {
        let player = this.state.player.map(player =>{
         console.log("This is player ID",player)

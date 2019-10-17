@@ -1,54 +1,66 @@
 import React , {Component} from 'react';
-import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter , Form, FormGroup, Input, NavLink} from 'reactstrap';
 
 class Register extends Component {
     constructor(props){
         super(props);
         this.state = {
+            modal: false,
             username: null,
             email: null,
             password: null,
-            registrationErrors: ""
         }
+        this.toggle = this.toggle.bind(this);
     }
+    
+    toggle() {
+        this.setState(prevState => ({
+          modal: !prevState.modal
+        }));
+      }
+
+
     handleChange=(e)=>{
         console.log(this.state)
         this.setState({
             [e.target.name]:e.target.value
          })
     }
-
-    handleSubmit=(e)=>{
+    handleSubmit= async (e)=>{
         e.preventDefault();
         console.log("Submitted Form")
-        // //Add Handle Register Function
-        this.props.handleRegister(this.state)
+        console.log("Ready to Edit")
+        const validUpdate = await this.props.handleRegister(this.state)
+        if(validUpdate === true){
+            this.toggle();
+        }
     }
-
     render(){
         return (
-            <div className="register">
-                <h1>Register</h1>
-<Form inline onSubmit ={this.handleSubmit}>
-    <FormGroup>
-        <Label for="exampleEmail" hidden>Username</Label>
-        <Input type="username" name="username" id="exampleusername" placeholder="username" onChange={this.handleChange} />
-    </FormGroup>
-    <FormGroup>
-        <Label for="exampleEmail" hidden>Email</Label>
-   <Input type="email" name="email" id="exampleEmail" placeholder="Email" onChange={this.handleChange} />
- </FormGroup>
- {' '}
- <FormGroup>
-   <Label for="examplePassword" hidden>Password</Label>
-   <Input type="password" name="password" id="examplePassword" placeholder="Password" onChange={this.handleChange} />
- </FormGroup>
-    {' '}
-    <Button>Submit</Button>
-    </Form>
-</div>
-    
-        )
+            <div>
+                <div className="Signup">
+                 <NavLink  href="#" onClick={this.toggle}>Sign up now</NavLink>
+            </div>
+            <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
+              <ModalHeader toggle={this.toggle} className="modal-header" charCode="X">
+              <img src = "http://www.michael-weinstein.com/wp-content/uploads/2015/04/nba_africa-logo1.png" width="60" height="60"/>
+              Register</ModalHeader>
+              <ModalBody className ="modal-body">
+                  <Form onSubmit = {this.handleSubmit}>
+                  <FormGroup>
+                    <Input type="username" name="username"  className="LoginForm"  placeholder="username" onChange={this.handleChange} />
+                    <Input type="email" name="email"   className="LoginForm" placeholder="Email" onChange={this.handleChange} />
+                    <Input type="password" name="password"    className="LoginForm" placeholder="Password" onChange={this.handleChange} />
+                </FormGroup>
+                  </Form>
+               </ModalBody>
+              <ModalFooter>
+                <Button outline color="success" onClick={this.handleSubmit}>Create User{' '}</Button>
+                <Button outline color="danger" onClick={this.toggle}>Cancel {' '}</Button>
+              </ModalFooter>
+            </Modal>
+          </div>
+    )
     }
 
 }

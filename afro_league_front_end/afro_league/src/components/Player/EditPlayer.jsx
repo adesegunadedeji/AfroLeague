@@ -39,7 +39,10 @@ handleSubmit= async (e)=>{
       <div>
         <Button color="danger" onClick={this.toggle}> Edit {this.props.player.player}</Button>
         <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-          <ModalHeader toggle={this.toggle} charCode="X">{this.state.name}</ModalHeader>
+          <ModalHeader toggle={this.toggle} charCode="X">{this.state.name}
+          <img src = "http://www.michael-weinstein.com/wp-content/uploads/2015/04/nba_africa-logo1.png" width="60" height="60"/>
+          <h6>{this.props.player.player}</h6>
+          </ModalHeader>
           <ModalBody className ="modal-body">
               <Form onSubmit = {this.handleSubmit}>
               <FormGroup row>

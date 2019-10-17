@@ -4,11 +4,9 @@ import { FaGlassWhiskey,FaHeart } from 'react-icons/fa'
 function FooterComponent (){
         return (
             <div className = "footerSection">
-                <p>
-                    <small>
-                   Made with <FaHeart/> and Lots of <FaGlassWhiskey/>
-                       </small>
-                </p>
+             <footer className ="footer">
+                   Made with <FaHeart/> and Lots of <FaGlassWhiskey/>  © Adesegun Adedeji 2019
+                   </footer>
             </div>
         )
 }

@@ -1,12 +1,15 @@
 import React, {Component} from 'react';
-import {Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import {Collapse, Navbar, NavbarToggler,Button, NavbarBrand, Nav, NavItem, NavLink, Form, Input, FormGroup} from 'reactstrap';
 class NavbarReact extends Component{
 
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.toggleNavbar = this.toggleNavbar.bind(this);
         this.state = {
-          collapsed: true
+          collapsed: true,
+          username: null,
+          email: null,
+          password: null
         };
       }
     
@@ -16,12 +19,35 @@ class NavbarReact extends Component{
         });
       }
 
+    handleChange=(e)=>{
+        console.log(this.state)
+        this.setState({
+            [e.target.name]:e.target.value
+         })
+    }
+
+    handleSubmit=(e)=>{
+        e.preventDefault();
+        console.log("FORM SUBMITTED")
+         this.props.handleLogin(this.state)
+    }
+
       render() {
         return (
           <div>
             <Navbar className = "Navbar" light>
-              <NavbarBrand href="/" className="mr-auto">AfroLeague</NavbarBrand>
-              <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
+            <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
+            <img src="http://www.michael-weinstein.com/wp-content/uploads/2015/04/nba_africa-logo1.png" width="60" height="60"/>
+            <NavbarBrand href="/" className="mr-auto">afroLeague</NavbarBrand>
+            <Form onSubmit = {this.handleSubmit} className="form-inline">
+                  <FormGroup>
+                    <Input type="username" name="username" className="LoginForm" placeholder="username" onChange={this.handleChange} />
+                    <Input type="email" name="email" className="LoginForm" placeholder="Email" onChange={this.handleChange} />
+                    <Input type="password" name="password"className="LoginForm"  placeholder="Password" onChange={this.handleChange} />
+                    <Button outline color="success">Login</Button>
+                    {/* <Register  handleRegister={this.props.handleRegister} handleSuccessfulAuth={this.props.handleSuccessfulAuth}/> */}
+                </FormGroup>
+                  </Form>
               <Collapse isOpen={!this.state.collapsed} navbar>
                 <Nav navbar>
                   <NavItem className="navItem">

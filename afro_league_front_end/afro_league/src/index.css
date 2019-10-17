@@ -11,3 +11,48 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+ a.mr-auto.navbar-brand{
+  font-family: 'Mansalva', cursive;
+  color:  #ED164E;
+ }
+ footer.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Mansalva', cursive;
+  color:  #ED164E;
+ }
+
+input.LoginForm.form-control:focus{
+  margin: 3px;
+  font-family: 'Mansalva', cursive;
+}
+input.LoginForm.form-control{
+  margin: 3px;
+  font-family: 'Mansalva', cursive;
+  cursor: pointer;
+}
+
+div.modal-header{
+    font-family: 'Mansalva', cursive;
+    color:  #ED164E;
+}
+a.nav-link{
+  font-family: 'Mansalva', cursive;
+  color:  #ED164E;
+ }
+ h1,h6{
+  font-family: 'Mansalva', cursive;
+ }
+ button.btn{
+  font-family: 'Mansalva', cursive;
+  border: 2px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  cursor: pointer;
+ }
+ .button:hover {opacity: 1}
