@@ -44,6 +44,7 @@ class App extends Component {
         try{ 
         const loginStatus  = await fetch(`http://localhost:3001/logged_in`,{
             method: "GET",
+            credentials: "include",
             headers:{
               "Content-Type": "application/json",
               "acccept": "application/json"

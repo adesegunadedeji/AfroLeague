@@ -67,6 +67,7 @@ class Home extends Component{
         const loginResponse = await fetch(`http://localhost:3001/login`,{
           method: "POST",
           body: JSON.stringify(formData),
+          credentials: "include",
           headers:{
             "Content-Type": "application/json",
             "acccept": "application/json",
@@ -75,12 +76,12 @@ class Home extends Component{
 
         const parsedResponse = await loginResponse.json();
         console.log("Response from Login", parsedResponse)
-        if(parsedResponse.logged_in){
-            // this.setState({
-            //     username:parsedResponse.username,
-            //     email: parsedResponse.email,
-            //     password: parsedResponse.password
-            // }) 
+        if(parsedResponse){
+            this.setState({
+                username:parsedResponse.username,
+                email: parsedResponse.email,
+                password: parsedResponse.password
+            }) 
             this.handleSuccessfulAuth(parsedResponse);
         }
         }
@@ -104,7 +105,6 @@ class Home extends Component{
     render(){
         return(
             <div>
-                <h1>Home</h1>
                 <h1>Status: {this.props.logged_in}</h1>
                 <button onClick={()=> this.handleLogoutClick()}>Logout</button>
                 <Register  handleRegister={this.handleRegister} handleSuccessfulAuth={this.handleSuccessfulAuth}/>

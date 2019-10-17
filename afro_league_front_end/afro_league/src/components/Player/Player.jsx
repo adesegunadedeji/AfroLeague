@@ -53,7 +53,7 @@ class Player extends Component {
 
     deletePlayer = async(id) => {
         try{
-            const deletePlayer = await fetch(`http://localhost:3001/leagues/${id}`,{
+            await fetch(`http://localhost:3001/leagues/${id}`,{
                 method: "DELETE",
             });
             this.setState({
@@ -67,14 +67,13 @@ class Player extends Component {
     render () {
        let player = this.state.player.map(player =>{
         console.log("This is player ID",player)
-        return <ul key = {player.id}>
-                    <li>{player.player}</li>
-                    <li>
+        return <div key = {player.id}>
+                    <h4>{player.player}</h4>
                     <EditPlayer player={player}  updatePlayer ={this.updatePlayer}/>
                     <Button  outline color="danger" onClick={()=>{this.deletePlayer(player.id)
     }}>Delete Player</Button>
-                    </li>
-            </ul>
+                    </div>
+    
         })
         return ( 
             <div className = "playerRoster">

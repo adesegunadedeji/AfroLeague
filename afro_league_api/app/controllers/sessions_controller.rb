@@ -10,8 +10,8 @@ class SessionsController < ApplicationController
       puts user.id
       puts "================= USER SESSIONS"
       session[:user_id] = user.id
-      puts "================= PARAMS SESSIONS"
-      puts params
+      puts "================= PARAMS SESSIONS SESSION> ID"
+      puts session
       puts "================= PARAMS SESSIONS"
       render json: {
         status: :created,
@@ -24,9 +24,9 @@ class SessionsController < ApplicationController
   end
   def logged_in
     puts "================= LOGGEDIN SESSIONS"
-    puts [:user_id]
+    puts session[:user_id]
     puts "================= LOGGEDIN SESSIONS"
-    @current_user = User.find_by(session[:user_id])
+    @current_user = User.find(session)
       if @current_user
         render json: {
         logged_in: true,
