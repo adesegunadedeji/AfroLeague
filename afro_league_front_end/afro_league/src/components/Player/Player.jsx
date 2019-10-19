@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import EditPlayer from './EditPlayer';
-import {Button} from 'reactstrap';
+import {Card, CardImg, CardText, CardBody,CardTitle, CardSubtitle, Button, Row, Col, Container} from 'reactstrap';
 class Player extends Component {
 
     constructor(){
@@ -69,19 +69,29 @@ class Player extends Component {
        let player = this.state.player.map(player =>{
         console.log("This is player ID",player)
         return <div key = {player.id}>
-                    <h4>{player.player}</h4>
-                    <EditPlayer player={player}  updatePlayer ={this.updatePlayer}/>
-                    <Button  outline color="danger" onClick={()=>{this.deletePlayer(player.id)
-    }}>Delete Player</Button>
+            <div ClassName = "playerRosterff">
+            <Container>
+                <Card>
+                <CardBody>
+                    <CardImg top width = "100"  src="https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1367&q=80" alt="Card image cap" />
+                        <h1>{player.player}</h1>
+                        <CardSubtitle>{player.team}'s {player.position}</CardSubtitle>
+                        <p>{player.player} currently plays for {player.team} coached by {player.coach}</p>
+                        <EditPlayer player={player}  updatePlayer ={this.updatePlayer}/>
+                        <Button  outline color="danger" onClick={()=>{this.deletePlayer(player.id)}}>Delete Player</Button>
+                    </CardBody>
+                    </Card>
+                    </Container>
                     </div>
-    
+</div>
         })
         return ( 
-            <div className = "playerRoster">
+            <div>
                 <h1>Afro League Player Roster</h1>
+                <div className = "playerRoster">
                 {player}
-            </div>
-        )
+        </div>
+        </div>)
     }
   }
   export default Player

@@ -1,11 +1,22 @@
 import React, {Component} from 'react'
 import Register from '../Authentication/Register'
-
+import { Jumbotron, NavLink, Container, Button} from 'reactstrap';
+import NewPlayer from '../Player/NewPlayer'
 class Home extends Component{
+    constructor(){
+        super();
+        this.state ={
+            time: [],
+            news:[
+            ]
+        }
+    }
     
     componentDidMount(){
         console.log("Component did Mount");
         this.getUser();
+        this.getConference();
+        this.getNews();
     }
     
     getUser = async()=>{
@@ -61,14 +72,64 @@ class Home extends Component{
     //         console.log("LOGOUT ERROR",err)
     //     }
     // }
+
+    getConference = async()=>{
+        try{
+        const conference =  await fetch(` http://worldtimeapi.org/api/timezone/America/New_york`, {
+            "method": "GET"
+         })
+         const parsedResponse = await conference.json();
+         console.log(parsedResponse)
+         this.setState({
+             time: parsedResponse.datetime
+         })
+        }
+        catch(err){
+            console.log(err);
+        } 
+};
+getNews= async()=>{
+    try{
+    const basketballNews =  await fetch(`http://site.api.espn.com/apis/site/v2/sports/basketball/nba/news`, {
+        "method": "GET"
+     })
+     const parsedResponse = await basketballNews.json();
+     console.log(parsedResponse)
+     this.setState({
+         news: parsedResponse
+     })
+    }
+    catch(err){
+        console.log(err);
+    } 
+};
+
     render(){
         return(
             <div>
                    {/* <h3>Status: {this.props.logged_in}</h3>  */}
                 {/* <button onClick={()=> this.handleLogoutClick()}>Logout</button> */}
                 <Register  handleRegister={this.handleRegister} handleSuccessfulAuth={this.props.handleSuccessfulAuth}/>
-                <video  autoplay loop src="https://isorepublic.com/wp-content/uploads/2018/06/isorepublic-free-video-man-playing-basketball.mp4" poster=""controls  width="600"  align="right"></video>
-            </div>
+                <div>
+      <Jumbotron>
+          <Container>
+        <h1 className="display-3">Afro League</h1>
+        <hr className="my-2" />
+        <p className="lead">
+        </p>
+        <NavLink href="/about" className = "jumbotronLink">Learn More</NavLink>
+        </Container>
+      </Jumbotron>
+    </div>
+            <h1>Interested in joining us?</h1>
+            <hr className="my-2" />
+            <NavLink href="/NewPlayer" className = "jumbotronLink">New Player</NavLink>
+          <div>
+</div>
+<h1>Local Time:{this.state.time}</h1>
+    </div> 
+
+   
         )
     }
 }

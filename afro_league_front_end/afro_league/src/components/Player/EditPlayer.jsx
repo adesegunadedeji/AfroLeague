@@ -40,41 +40,40 @@ handleSubmit= async (e)=>{
         <Button color="danger" onClick={this.toggle}> Edit {this.props.player.player}</Button>
         <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
           <ModalHeader toggle={this.toggle} charCode="X">{this.state.name}
-          <img src = "http://www.michael-weinstein.com/wp-content/uploads/2015/04/nba_africa-logo1.png" width="60" height="60"/>
-          <h6>{this.props.player.player}</h6>
-          </ModalHeader>
+          <img src = "http://www.michael-weinstein.com/wp-content/uploads/2015/04/nba_africa-logo1.png" width="60" height="60"/> Edit  Profile of {this.props.player.player}' 
+         </ModalHeader>
           <ModalBody className ="modal-body">
               <Form onSubmit = {this.handleSubmit}>
               <FormGroup row>
-          <Label for="exampleEmail2" sm={2}> Player</Label>
+          <Label className="labelEdit" sm={2}> Player</Label>
           <Col sm={10}>
-                <Input type="text" name="player" onChange={this.handleChange} value={this.state.player}/>
+                <Input type="text" name="player"  className="LoginForm" onChange={this.handleChange} value={this.state.player}/>
                 </Col>
         </FormGroup>
         <FormGroup row>
-          <Label for="exampleEmail2" sm={2}> Position</Label>
+          <Label className="labelEdit" sm={2}> Position</Label>
           <Col sm={10}>
-                <Input type="text" name="position"onChange={this.handleChange}value={this.state.position}/>
+                <Input type="text" name="position" className="LoginForm" onChange={this.handleChange}value={this.state.position}/>
                 </Col>
         </FormGroup>
 
         <FormGroup row>
-          <Label for="exampleEmail2" sm={2}> Team</Label>
+          <Label className="labelEdit" sm={2}> Team</Label>
           <Col sm={10}>
-                <Input type="text" name="team"onChange={this.handleChange}value={this.state.team}/>
+                <Input type="text"  className="LoginForm" name="team"onChange={this.handleChange}value={this.state.team}/>
                 </Col>
         </FormGroup>
         <FormGroup row>
-          <Label for="exampleText" sm={2}> Coach</Label>
+          <Label className="labelEdit" sm={2}> Coach</Label>
           <Col sm={10}>
-                <Input type="text" name="coach"onChange={this.handleChange}value={this.state.coach}/>
+                <Input type="text"  className="LoginForm" name="coach"onChange={this.handleChange}value={this.state.coach}/>
                 </Col>
         </FormGroup>
               </Form>
            </ModalBody>
           <ModalFooter>
             <Button outline color="success" onClick={this.handleSubmit}>Edit Player Profile{' '}</Button>
-            <Button color="secondary" onClick={this.toggle}>Cancel</Button>
+            <Button outline color="danger" onClick={this.toggle}>Cancel {' '}</Button>
           </ModalFooter>
         </Modal>
       </div>

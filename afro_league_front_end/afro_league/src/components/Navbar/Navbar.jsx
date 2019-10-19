@@ -37,7 +37,7 @@ class NavbarReact extends Component{
           <div>
             <Navbar className = "Navbar" light>
             <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
-            <img src="http://www.michael-weinstein.com/wp-content/uploads/2015/04/nba_africa-logo1.png" width="60" height="60"/>
+            <img src="http://www.michael-weinstein.com/wp-content/uploads/2015/04/nba_africa-logo1.png" width="60" height="60" alt="nbaLogo"/>
             <NavbarBrand href="/" className="mr-auto">afroLeague</NavbarBrand>
             <Form onSubmit = {this.handleSubmit} className="form-inline">
                   <FormGroup>
@@ -57,7 +57,7 @@ class NavbarReact extends Component{
                     <NavLink href="/contact/">contact</NavLink>
                   </NavItem>
                   <NavItem className="navItem">
-                    <NavLink href="/new/">New Player</NavLink>
+                    <NavLink href="/newPlayer/">New Player</NavLink>
                   </NavItem>
                   <NavItem className="navItem">
                     <NavLink href="/players">Roster</NavLink>

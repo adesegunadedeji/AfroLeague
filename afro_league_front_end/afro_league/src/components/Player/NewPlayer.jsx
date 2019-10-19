@@ -24,7 +24,8 @@ class NewPlayer extends Component{
 render(){
 return(
     <div>
-        <h1>New Player</h1>
+
+        <h1 className="NewPlayer">New Player</h1>
         <Form onSubmit = {this.handleSubmit}>
             <FormGroup row>
                 <Label for="exampleEmail2" sm={2}> Player</Label>
