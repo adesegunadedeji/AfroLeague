@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaGlassWhiskey,FaHeart } from 'react-icons/fa'
+import {  FaGlassWhiskey,} from 'react-icons/fa'
 
 function FooterComponent (){
         return (
