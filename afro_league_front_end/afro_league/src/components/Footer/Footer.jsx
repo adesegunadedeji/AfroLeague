@@ -5,7 +5,7 @@ function FooterComponent (){
         return (
             <div className = "footerSection">
              <footer className ="footer">
-                   Made with <FaHeart/> and Lots of <FaGlassWhiskey/>  © Adesegun Adedeji 2019
+                   Made with Lots of <FaGlassWhiskey/>  © Adesegun Adedeji 2019
                    </footer>
             </div>
         )

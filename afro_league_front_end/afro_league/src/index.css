@@ -23,7 +23,7 @@ code {
   left: 0;
   bottom: 0;
   width: 100%;
-  font-size: 16px;
+  font-size: 20px;
   text-align: center;
   font-family: 'Mansalva', cursive;
  }
@@ -73,8 +73,8 @@ a.nav-link{
  .jumbotron{
    margin-top: 50px;
    margin-bottom: 50px;
-  background-image: url('https://i.ibb.co/QHKR2Fz/Canva-Silhouette-Photo-of-Basketball-Hoop.jpg');
-  background-size: contain;
+  background-image: url('https://images.unsplash.com/photo-1493078640264-28e9ec0ae9ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+  background-size: cover;
   color: white;
 
  }
@@ -82,12 +82,6 @@ a.nav-link{
 
    font-size: 22px;
    text-decoration-color:  white;
- }
-
- .playerRoster{
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: flex-start 
  }
 label.col-sm-2.col-form-label,p{
   font-family: 'Mansalva', cursive;

@@ -45,6 +45,7 @@ class NavbarReact extends Component{
                     <Input type="email" name="email" className="LoginForm" placeholder="Email" onChange={this.handleChange} />
                     <Input type="password" name="password"className="LoginForm"  placeholder="Password" onChange={this.handleChange} />
                     <Button outline color="success">Login</Button>
+                    <Button  outline color="danger">Logout</Button>
                     {/* <Register  handleRegister={this.props.handleRegister} handleSuccessfulAuth={this.props.handleSuccessfulAuth}/> */}
                 </FormGroup>
                   </Form>

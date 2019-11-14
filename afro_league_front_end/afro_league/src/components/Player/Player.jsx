@@ -38,13 +38,13 @@ class Player extends Component {
                     "Content-Type": "application/json"
                 }
             })
-            const parsedResponse = await updatePlayer.json();
+            const parsedResponse = await updatePlayer.text();
             console.log("PARSED RESPONSE!!!!!!!!!", parsedResponse)
-                this.setState({
-                    player: this.state.player.map(player => player.id === id?
-                    parsedResponse: player)
-                })
-            console.log("player", this.state.player)
+            //     this.setState({
+            //         player: this.state.player.map(player => player.id === id?
+            //         parsedResponse: player)
+            //     })
+            // console.log("player", this.state.player)
         }
         catch(err){
             console.log(err)
@@ -68,9 +68,8 @@ class Player extends Component {
     render () {
        let player = this.state.player.map(player =>{
         console.log("This is player ID",player)
-        return <div key = {player.id}>
-            <div ClassName = "playerRosterff">
-            <Container>
+        return(  
+                <Col sm ="3" key = {player.id} >
                 <Card>
                 <CardBody>
                     <CardImg top width = "100"  src="https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1367&q=80" alt="Card image cap" />
@@ -81,15 +80,16 @@ class Player extends Component {
                         <Button  outline color="danger" onClick={()=>{this.deletePlayer(player.id)}}>Delete Player</Button>
                     </CardBody>
                     </Card>
-                    </Container>
-                    </div>
-</div>
-        })
+                    </Col>         
+        ) })
         return ( 
             <div>
                 <h1>Afro League Player Roster</h1>
                 <div className = "playerRoster">
+                 <Row>
                 {player}
+                </Row>
+               
         </div>
         </div>)
     }

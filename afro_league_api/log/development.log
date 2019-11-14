@@ -57252,3 +57252,3929 @@ Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.8ms | Allocations: 1
 NoMethodError (undefined method `join' for {}:Hash):
   
 app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 09:57:19 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 09:57:19 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Processing by UsersController#index as */*
+  [1m[36mUser Load (8.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+  [1m[36mUser Load (35.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 500 Internal Server Error in 83ms (ActiveRecord: 10.6ms | Allocations: 2229)
+
+
+  ↳ app/controllers/users_controller.rb:11:in `index'
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 200 OK in 91ms (Views: 55.6ms | ActiveRecord: 35.0ms | Allocations: 7828)
+
+
+Started GET "/logged_in" for ::1 at 2019-10-19 09:59:25 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 1.6ms | Allocations: 1631)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/logged_in" for ::1 at 2019-10-19 09:59:29 -0400
+Started GET "/users" for ::1 at 2019-10-19 09:59:29 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 2.5ms | Allocations: 1631)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Processing by UsersController#index as */*
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 1.2ms | Allocations: 5706)
+
+
+Started GET "/logged_in" for ::1 at 2019-10-19 09:59:34 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 9.5ms | Allocations: 1659)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 09:59:35 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 09:59:35 -0400
+Processing by SessionsController#logged_in as */*
+Processing by UsersController#index as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.9ms | Allocations: 5885)
+
+
+  [1m[36mUser Load (10.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 10.2ms | Allocations: 7446)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/logged_in" for ::1 at 2019-10-19 09:59:37 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (20.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 20.6ms | Allocations: 1631)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/logged_in" for ::1 at 2019-10-19 09:59:39 -0400
+Started GET "/users" for ::1 at 2019-10-19 09:59:39 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Processing by UsersController#index as */*
+  [1m[36mUser Load (21.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 21.2ms | Allocations: 2003)
+
+
+  [1m[36mUser Load (11.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 200 OK in 45ms (Views: 33.3ms | ActiveRecord: 11.6ms | Allocations: 7677)
+
+
+Started GET "/logged_in" for ::1 at 2019-10-19 09:59:47 -0400
+Started GET "/leagues" for ::1 at 2019-10-19 09:59:47 -0400
+Processing by LeaguesController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 1.2ms | Allocations: 1631)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  [1m[36mLeague Load (80.3ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 87ms (Views: 5.8ms | ActiveRecord: 80.3ms | Allocations: 34665)
+
+
+Started GET "/logged_in" for ::1 at 2019-10-19 10:00:17 -0400
+Started GET "/users" for ::1 at 2019-10-19 10:00:17 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Processing by UsersController#index as */*
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 8ms (Views: 5.6ms | ActiveRecord: 1.6ms | Allocations: 5869)
+
+
+  [1m[36mUser Load (12.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 12.2ms | Allocations: 7743)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/logged_in" for ::1 at 2019-10-19 10:00:27 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (11.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 11.2ms | Allocations: 1631)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 10:00:30 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 10:00:30 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Processing by UsersController#index as */*
+  [1m[36mUser Load (25.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 25.1ms | Allocations: 1742)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  [1m[36mUser Load (59.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 85ms (Views: 25.7ms | ActiveRecord: 59.1ms | Allocations: 37053)
+
+
+Started GET "/users" for ::1 at 2019-10-19 10:02:33 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 10:02:33 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (8.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (5.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `index'
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 5.7ms | Allocations: 7259)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 200 OK in 54ms (Views: 41.6ms | ActiveRecord: 8.3ms | Allocations: 6412)
+
+
+Started GET "/users" for ::1 at 2019-10-19 10:03:57 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 10:03:57 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (6.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 49ms (Views: 38.3ms | ActiveRecord: 6.9ms | Allocations: 5898)
+
+
+  [1m[36mUser Load (34.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 34.6ms | Allocations: 7446)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 10:03:57 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 124ms (Views: 118.3ms | ActiveRecord: 4.3ms | Allocations: 5707)
+
+
+Started GET "/logged_in" for ::1 at 2019-10-19 10:03:57 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.4ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 10:04:00 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 10:04:00 -0400
+Processing by SessionsController#logged_in as */*
+Processing by UsersController#index as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 11ms (Views: 8.1ms | ActiveRecord: 2.3ms | Allocations: 5885)
+
+
+  [1m[36mUser Load (8.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 8.7ms | Allocations: 7446)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 10:08:24 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 10:08:24 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 38ms (Views: 36.7ms | ActiveRecord: 1.1ms | Allocations: 5898)
+
+
+  [1m[36mUser Load (39.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 39.5ms | Allocations: 7287)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/logged_in" for ::1 at 2019-10-19 10:08:34 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 10:09:34 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 10:09:34 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Processing by UsersController#index as */*
+  [1m[36mUser Load (4.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 4.9ms | Allocations: 2611)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 200 OK in 29ms (Views: 25.9ms | ActiveRecord: 2.8ms | Allocations: 7201)
+
+
+Started GET "/users" for ::1 at 2019-10-19 10:09:34 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 10:09:34 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (15.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 86ms (Views: 70.2ms | ActiveRecord: 15.2ms | Allocations: 6197)
+
+
+  [1m[36mUser Load (83.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 118ms (ActiveRecord: 83.3ms | Allocations: 7446)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/logged_in" for ::1 at 2019-10-19 10:09:35 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.6ms | Allocations: 1631)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 10:09:35 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 10:09:35 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (4.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 15ms (Views: 8.8ms | ActiveRecord: 4.4ms | Allocations: 5706)
+
+
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (6.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 10.8ms | Allocations: 1720)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 10:12:00 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 10:12:00 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (34.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 45ms (Views: 10.2ms | ActiveRecord: 34.2ms | Allocations: 6197)
+
+
+  [1m[36mUser Load (26.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 26.9ms | Allocations: 7446)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 10:12:00 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.3ms | Allocations: 5706)
+
+
+Started GET "/logged_in" for ::1 at 2019-10-19 10:12:00 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.4ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/logged_in" for ::1 at 2019-10-19 10:12:00 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms | Allocations: 1631)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 10:12:00 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 10:12:00 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (5.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 5.3ms | Allocations: 1631)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  [1m[36mUser Load (56.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 90ms (Views: 33.8ms | ActiveRecord: 56.1ms | Allocations: 37242)
+
+
+Started GET "/logged_in" for ::1 at 2019-10-19 10:13:27 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 2.5ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 10:13:27 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 10:13:27 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  [1m[36mUser Load (5.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.9ms | Allocations: 2248)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 79ms (Views: 73.9ms | ActiveRecord: 5.1ms | Allocations: 37542)
+
+
+Started GET "/users" for ::1 at 2019-10-19 10:13:28 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 10:13:28 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.7ms | Allocations: 2248)
+
+
+Completed 200 OK in 16ms (Views: 14.2ms | ActiveRecord: 1.7ms | Allocations: 7393)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 10:13:28 -0400
+Processing by UsersController#index as */*
+Started GET "/logged_in" for ::1 at 2019-10-19 10:13:28 -0400
+  [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 11ms (Views: 6.6ms | ActiveRecord: 4.3ms | Allocations: 6035)
+
+
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.4ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/logged_in" for ::1 at 2019-10-19 10:16:46 -0400
+Started GET "/users" for ::1 at 2019-10-19 10:16:46 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Processing by UsersController#index as */*
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 31ms (Views: 24.8ms | ActiveRecord: 4.0ms | Allocations: 5847)
+
+
+  [1m[36mUser Load (26.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 26.0ms | Allocations: 7553)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 10:16:46 -0400
+Processing by UsersController#index as */*
+Started GET "/logged_in" for ::1 at 2019-10-19 10:16:46 -0400
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 23ms (Views: 20.9ms | ActiveRecord: 2.0ms | Allocations: 6406)
+
+
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 1.7ms | Allocations: 6819)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/logged_in" for ::1 at 2019-10-19 10:16:46 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 3.8ms | Allocations: 1631)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 10:16:46 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 10:16:46 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 13ms (Views: 8.9ms | ActiveRecord: 3.8ms | Allocations: 6197)
+
+
+  [1m[36mUser Load (12.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 12.7ms | Allocations: 7446)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/logged_in" for ::1 at 2019-10-19 10:17:00 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 1.4ms | Allocations: 1631)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 10:17:00 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 10:17:00 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.5ms | Allocations: 1631)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 11ms (Views: 8.4ms | ActiveRecord: 0.8ms | Allocations: 5706)
+
+
+Started GET "/users" for ::1 at 2019-10-19 10:17:00 -0400
+Processing by UsersController#index as */*
+Started GET "/logged_in" for ::1 at 2019-10-19 10:17:00 -0400
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Processing by SessionsController#logged_in as */*
+Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 1.3ms | Allocations: 6335)
+
+
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.5ms | Allocations: 1668)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 10:17:00 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 10:17:00 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Processing by UsersController#index as */*
+  [1m[36mUser Load (22.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 22.1ms | Allocations: 1857)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  [1m[36mUser Load (28.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 100ms (Views: 71.1ms | ActiveRecord: 28.8ms | Allocations: 37053)
+
+
+Started GET "/users" for ::1 at 2019-10-19 10:17:06 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 10:17:06 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 14ms (Views: 11.1ms | ActiveRecord: 2.9ms | Allocations: 6183)
+
+
+  [1m[36mUser Load (6.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 6.5ms | Allocations: 6589)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/logged_in" for ::1 at 2019-10-19 10:17:16 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 1634)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 10:17:25 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 10:17:25 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Processing by UsersController#index as */*
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.9ms | Allocations: 1738)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 43ms (Views: 38.5ms | ActiveRecord: 3.5ms | Allocations: 37050)
+
+
+Started GET "/leagues" for ::1 at 2019-10-19 10:17:29 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 10:17:29 -0400
+Processing by LeaguesController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.7ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  [1m[36mLeague Load (39.7ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 47ms (Views: 7.0ms | ActiveRecord: 39.7ms | Allocations: 34666)
+
+
+Started GET "/users" for ::1 at 2019-10-19 10:18:01 -0400
+Processing by UsersController#index as */*
+Started GET "/logged_in" for ::1 at 2019-10-19 10:18:01 -0400
+  [1m[36mUser Load (41.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 49ms (Views: 7.6ms | ActiveRecord: 41.4ms | Allocations: 6050)
+
+
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (48.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 48.0ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 10:18:01 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 10:18:01 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 1631)
+
+
+  [1m[36mUser Load (4.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 73ms (Views: 68.5ms | ActiveRecord: 4.4ms | Allocations: 37538)
+
+
+Started GET "/users" for ::1 at 2019-10-19 10:18:02 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 10:18:02 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (4.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 4.9ms | Allocations: 1631)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  [1m[36mUser Load (59.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 69ms (Views: 9.7ms | ActiveRecord: 59.0ms | Allocations: 37541)
+
+
+Started GET "/logged_in" for ::1 at 2019-10-19 10:18:02 -0400
+Started GET "/leagues" for ::1 at 2019-10-19 10:18:02 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Processing by LeaguesController#index as */*
+  [1m[36mUser Load (10.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 10.6ms | Allocations: 2004)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  [1m[36mLeague Load (61.3ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 67ms (Views: 5.3ms | ActiveRecord: 61.3ms | Allocations: 34474)
+
+
+Started GET "/users" for ::1 at 2019-10-19 10:18:21 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 10:18:21 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.5ms | Allocations: 5899)
+
+
+  [1m[36mUser Load (11.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 11.4ms | Allocations: 7425)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/logged_in" for ::1 at 2019-10-19 10:18:21 -0400
+Started GET "/users" for ::1 at 2019-10-19 10:18:21 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (12.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+  [1m[36mUser Load (16.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 12.3ms | Allocations: 1631)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 200 OK in 32ms (Views: 15.1ms | ActiveRecord: 16.7ms | Allocations: 7871)
+
+
+Started GET "/users" for ::1 at 2019-10-19 10:18:21 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 10:18:21 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Processing by UsersController#index as */*
+  [1m[36mUser Load (5.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  [1m[36mUser Load (6.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 20ms (Views: 9.8ms | ActiveRecord: 6.9ms | Allocations: 6364)
+
+
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 5.2ms | Allocations: 7409)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/leagues" for ::1 at 2019-10-19 10:18:21 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 10:18:21 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Processing by LeaguesController#index as */*
+  [1m[36mLeague Load (12.7ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 18ms (Views: 4.8ms | ActiveRecord: 12.7ms | Allocations: 3270)
+
+
+  [1m[36mUser Load (8.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 8.9ms | Allocations: 4976)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 10:18:47 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.8ms | Allocations: 5722)
+
+
+Started GET "/logged_in" for ::1 at 2019-10-19 10:18:47 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (12.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 12.8ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 10:30:14 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 72ms (Views: 66.7ms | ActiveRecord: 2.7ms | Allocations: 5767)
+
+
+Started GET "/logged_in" for ::1 at 2019-10-19 10:30:15 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 3.4ms | Allocations: 1659)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 10:31:37 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 10:31:37 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (7.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 26ms (Views: 17.0ms | ActiveRecord: 7.8ms | Allocations: 5706)
+
+
+Started GET "/users" for ::1 at 2019-10-19 10:31:37 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (28.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 37ms (Views: 7.3ms | ActiveRecord: 28.9ms | Allocations: 5707)
+
+
+Started GET "/users" for ::1 at 2019-10-19 10:31:37 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (27.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 40ms (Views: 11.7ms | ActiveRecord: 27.9ms | Allocations: 5707)
+
+
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 26.2ms | Allocations: 1720)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/logged_in" for ::1 at 2019-10-19 10:31:37 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (102.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 107ms (ActiveRecord: 102.5ms | Allocations: 1631)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 10:31:38 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 10:31:38 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (32.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 40ms (Views: 7.0ms | ActiveRecord: 32.8ms | Allocations: 5706)
+
+
+Processing by SessionsController#logged_in as */*
+Started GET "/users" for ::1 at 2019-10-19 10:31:38 -0400
+  Parameters: {"session"=>{}}
+Processing by UsersController#index as */*
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.6ms | Allocations: 2004)
+
+
+  [1m[36mUser Load (5.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 61ms (Views: 55.7ms | ActiveRecord: 5.2ms | Allocations: 37016)
+
+
+Started GET "/logged_in" for ::1 at 2019-10-19 10:31:38 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (48.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 48.5ms | Allocations: 1631)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/logged_in" for ::1 at 2019-10-19 10:31:38 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.5ms | Allocations: 1631)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 10:31:49 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 10:31:49 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (9.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `index'
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 200 OK in 18ms (Views: 8.0ms | ActiveRecord: 9.9ms | Allocations: 6714)
+
+
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.4ms | Allocations: 7275)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/logged_in" for ::1 at 2019-10-19 10:31:49 -0400
+Started GET "/users" for ::1 at 2019-10-19 10:31:49 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Processing by UsersController#index as */*
+  [1m[36mUser Load (5.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 5.1ms | Allocations: 2620)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 60ms (Views: 58.9ms | ActiveRecord: 1.2ms | Allocations: 37051)
+
+
+Started GET "/logged_in" for ::1 at 2019-10-19 10:31:49 -0400
+Started GET "/users" for ::1 at 2019-10-19 10:31:49 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.6ms | Allocations: 1631)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Processing by UsersController#index as */*
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 1.2ms | Allocations: 5709)
+
+
+Started GET "/users" for ::1 at 2019-10-19 10:31:50 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 10:31:50 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (11.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 11.4ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  [1m[36mUser Load (63.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 72ms (Views: 8.6ms | ActiveRecord: 63.0ms | Allocations: 37542)
+
+
+Started GET "/users" for ::1 at 2019-10-19 10:31:50 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 10:31:50 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.7ms | Allocations: 6068)
+
+
+  [1m[36mUser Load (18.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 18.0ms | Allocations: 6830)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/leagues" for ::1 at 2019-10-19 10:32:21 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 10:32:21 -0400
+Processing by LeaguesController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (13.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 13.1ms | Allocations: 1631)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  [1m[36mLeague Load (51.0ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 56ms (Views: 5.0ms | ActiveRecord: 51.0ms | Allocations: 34629)
+
+
+Started GET "/users" for ::1 at 2019-10-19 10:33:47 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 10:33:47 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (390.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 609ms (Views: 213.7ms | ActiveRecord: 390.6ms | Allocations: 5708)
+
+
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (45.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 45.8ms | Allocations: 1635)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 10:34:41 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 10:34:41 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (21.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 36ms (Views: 14.6ms | ActiveRecord: 21.5ms | Allocations: 5902)
+
+
+  [1m[36mUser Load (45.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 45.8ms | Allocations: 7446)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 10:34:42 -0400
+Processing by UsersController#index as */*
+Started GET "/logged_in" for ::1 at 2019-10-19 10:34:42 -0400
+  [1m[36mUser Load (7.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 21ms (Views: 12.7ms | ActiveRecord: 7.8ms | Allocations: 6317)
+
+
+Started GET "/users" for ::1 at 2019-10-19 10:34:42 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (14.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 23ms (Views: 8.8ms | ActiveRecord: 14.2ms | Allocations: 5707)
+
+
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.0ms | Allocations: 1720)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/logged_in" for ::1 at 2019-10-19 10:34:42 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.6ms | Allocations: 1631)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 10:34:42 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 10:34:42 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 18ms (Views: 14.1ms | ActiveRecord: 3.1ms | Allocations: 5706)
+
+
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.0ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 10:34:43 -0400
+Processing by UsersController#index as */*
+Started GET "/logged_in" for ::1 at 2019-10-19 10:34:43 -0400
+  [1m[36mUser Load (21.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 29ms (Views: 7.6ms | ActiveRecord: 21.1ms | Allocations: 6037)
+
+
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (31.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 31.8ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 10:34:56 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 13ms (Views: 8.2ms | ActiveRecord: 2.6ms | Allocations: 5706)
+
+
+Started GET "/logged_in" for ::1 at 2019-10-19 10:34:56 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.6ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/logged_in" for ::1 at 2019-10-19 10:34:56 -0400
+Started GET "/users" for ::1 at 2019-10-19 10:34:56 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (18.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 25ms (Views: 6.6ms | ActiveRecord: 18.6ms | Allocations: 6197)
+
+
+  [1m[36mUser Load (45.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 45.8ms | Allocations: 7446)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 10:34:56 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 10:34:56 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Processing by UsersController#index as */*
+  [1m[36mUser Load (10.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 10.0ms | Allocations: 2003)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  [1m[36mUser Load (45.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 63ms (Views: 17.3ms | ActiveRecord: 45.2ms | Allocations: 37050)
+
+
+Started GET "/logged_in" for ::1 at 2019-10-19 10:34:56 -0400
+Started GET "/users" for ::1 at 2019-10-19 10:34:56 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.9ms | Allocations: 1632)
+
+
+Processing by UsersController#index as */*
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  [1m[36mUser Load (27.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 36ms (Views: 8.4ms | ActiveRecord: 27.2ms | Allocations: 35083)
+
+
+Started GET "/users" for ::1 at 2019-10-19 10:34:56 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 10:34:56 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (51.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 62ms (Views: 8.6ms | ActiveRecord: 51.9ms | Allocations: 6198)
+
+
+  [1m[36mUser Load (186.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 190ms (ActiveRecord: 186.4ms | Allocations: 7450)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/logged_in" for ::1 at 2019-10-19 10:38:16 -0400
+Started GET "/leagues" for ::1 at 2019-10-19 10:38:16 -0400
+Processing by LeaguesController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (14.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 14.0ms | Allocations: 1631)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  [1m[36mLeague Load (30.3ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 164ms (Views: 129.7ms | ActiveRecord: 30.3ms | Allocations: 34935)
+
+
+Started GET "/logged_in" for ::1 at 2019-10-19 10:44:49 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 1.3ms | Allocations: 1719)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/leagues" for ::1 at 2019-10-19 10:45:06 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 10:45:06 -0400
+Processing by LeaguesController#index as */*
+  [1m[36mLeague Load (5.6ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 5.9ms | ActiveRecord: 5.6ms | Allocations: 3129)
+
+
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 15.9ms | Allocations: 1720)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/logged_in" for ::1 at 2019-10-19 10:45:42 -0400
+Started GET "/users" for ::1 at 2019-10-19 10:45:42 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Processing by UsersController#index as */*
+  [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 4.3ms | Allocations: 2003)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  [1m[36mUser Load (6.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 48ms (Views: 41.9ms | ActiveRecord: 6.1ms | Allocations: 36984)
+
+
+Started GET "/users" for ::1 at 2019-10-19 10:47:11 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 10:47:11 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (11.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+  [1m[36mUser Load (5.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 200 OK in 38ms (Views: 23.1ms | ActiveRecord: 11.8ms | Allocations: 6232)
+
+
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 5.3ms | Allocations: 7446)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started POST "/login" for ::1 at 2019-10-19 10:59:02 -0400
+Processing by SessionsController#create as */*
+  Parameters: {"collapsed"=>true, "username"=>nil, "email"=>nil, "password"=>"[FILTERED]", "session"=>{"collapsed"=>true, "username"=>nil, "email"=>nil, "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Completed 200 OK in 25ms (Views: 0.9ms | ActiveRecord: 1.5ms | Allocations: 855)
+
+
+Started GET "/users" for ::1 at 2019-10-19 10:59:52 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 10:59:52 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 1.2ms | Allocations: 1636)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Processing by UsersController#index as */*
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 1.0ms | Allocations: 5767)
+
+
+Started GET "/logged_in" for ::1 at 2019-10-19 11:01:26 -0400
+Started GET "/users" for ::1 at 2019-10-19 11:01:26 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Processing by UsersController#index as */*
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 22ms (Views: 17.3ms | ActiveRecord: 3.6ms | Allocations: 5736)
+
+
+  [1m[36mUser Load (29.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 35.6ms | Allocations: 7846)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 11:01:26 -0400
+Processing by UsersController#index as */*
+Started GET "/logged_in" for ::1 at 2019-10-19 11:01:26 -0400
+  [1m[36mUser Load (28.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 36ms (Views: 7.7ms | ActiveRecord: 28.2ms | Allocations: 6330)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.4ms | Allocations: 1820)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 11:01:26 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Started GET "/logged_in" for ::1 at 2019-10-19 11:01:26 -0400
+Completed 200 OK in 20ms (Views: 17.3ms | ActiveRecord: 2.4ms | Allocations: 5706)
+
+
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.9ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 11:01:26 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 11:01:26 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Processing by UsersController#index as */*
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 2.6ms | Allocations: 1631)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  [1m[36mUser Load (10.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 70ms (Views: 59.8ms | ActiveRecord: 10.2ms | Allocations: 37229)
+
+
+Started GET "/users" for ::1 at 2019-10-19 11:01:26 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 11:01:26 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (11.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+  [1m[36mUser Load (118.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 200 OK in 130ms (Views: 118.5ms | ActiveRecord: 11.2ms | Allocations: 6074)
+
+
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 134ms (ActiveRecord: 118.8ms | Allocations: 7450)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 11:03:39 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 11:03:39 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (43.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 76ms (Views: 29.5ms | ActiveRecord: 43.1ms | Allocations: 6197)
+
+
+  [1m[36mUser Load (205.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 218ms (ActiveRecord: 205.2ms | Allocations: 7446)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 11:03:39 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 11:03:39 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (31.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 54ms (Views: 22.4ms | ActiveRecord: 31.1ms | Allocations: 6197)
+
+
+  [1m[36mUser Load (25.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 25.4ms | Allocations: 7446)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 11:03:39 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 11:03:40 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (6.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+  [1m[36mUser Load (22.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 6.5ms | Allocations: 1649)
+
+
+  ↳ app/controllers/users_controller.rb:11:in `index'
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 200 OK in 44ms (Views: 21.7ms | ActiveRecord: 22.3ms | Allocations: 8169)
+
+
+Started GET "/logged_in" for ::1 at 2019-10-19 11:03:40 -0400
+Started GET "/users" for ::1 at 2019-10-19 11:03:40 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (15.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 15.9ms | Allocations: 1631)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 82ms (Views: 80.9ms | ActiveRecord: 0.6ms | Allocations: 5709)
+
+
+Started GET "/users" for ::1 at 2019-10-19 11:03:40 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 11:03:40 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (10.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 21ms (Views: 10.5ms | ActiveRecord: 10.3ms | Allocations: 6198)
+
+
+  [1m[36mUser Load (50.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 58ms (ActiveRecord: 50.8ms | Allocations: 7447)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 11:04:01 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 11:04:01 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.3ms | Allocations: 2248)
+
+
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 1.2ms | Allocations: 7397)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 11:04:01 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 11:04:01 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (5.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 16ms (Views: 10.1ms | ActiveRecord: 5.2ms | Allocations: 6197)
+
+
+  [1m[36mUser Load (9.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 9.4ms | Allocations: 7424)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 11:04:02 -0400
+Processing by UsersController#index as */*
+Started GET "/logged_in" for ::1 at 2019-10-19 11:04:02 -0400
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 1.1ms | Allocations: 6035)
+
+
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.8ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 11:04:02 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 11:04:02 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 1649)
+
+
+  ↳ app/controllers/users_controller.rb:11:in `index'
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 200 OK in 15ms (Views: 11.4ms | ActiveRecord: 2.9ms | Allocations: 8169)
+
+
+Started GET "/users" for ::1 at 2019-10-19 11:04:02 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 11:04:02 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (128.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+  [1m[36mUser Load (124.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 200 OK in 138ms (Views: 9.1ms | ActiveRecord: 128.4ms | Allocations: 6229)
+
+
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 138ms (ActiveRecord: 124.1ms | Allocations: 7447)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/logged_in" for ::1 at 2019-10-19 11:04:11 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 1631)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/logged_in" for ::1 at 2019-10-19 11:04:14 -0400
+Started GET "/users" for ::1 at 2019-10-19 11:04:14 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Processing by UsersController#index as */*
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 1.2ms | Allocations: 2003)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  [1m[36mUser Load (37.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 45ms (Views: 6.6ms | ActiveRecord: 37.8ms | Allocations: 37015)
+
+
+Started GET "/users" for ::1 at 2019-10-19 11:07:02 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 11:07:02 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Parameters: {"session"=>{}}
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 33ms (Views: 24.9ms | ActiveRecord: 3.8ms | Allocations: 6060)
+
+
+  [1m[36mUser Load (8.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 8.3ms | Allocations: 6834)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 11:07:02 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 11:07:02 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 16ms (Views: 12.9ms | ActiveRecord: 2.2ms | Allocations: 5706)
+
+
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.7ms | Allocations: 1668)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 11:07:02 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 11:07:02 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.5ms | Allocations: 1631)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Processing by UsersController#index as */*
+  [1m[36mUser Load (28.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 44ms (Views: 15.0ms | ActiveRecord: 28.7ms | Allocations: 5767)
+
+
+Started GET "/users" for ::1 at 2019-10-19 11:07:03 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 11:07:03 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 23ms (Views: 19.7ms | ActiveRecord: 2.7ms | Allocations: 6547)
+
+
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 1.5ms | Allocations: 7276)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/logged_in" for ::1 at 2019-10-19 11:07:03 -0400
+Started GET "/users" for ::1 at 2019-10-19 11:07:03 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Processing by UsersController#index as */*
+  [1m[36mUser Load (61.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 66ms (ActiveRecord: 61.7ms | Allocations: 2003)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  [1m[36mUser Load (106.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 118ms (Views: 10.6ms | ActiveRecord: 106.5ms | Allocations: 37050)
+
+
+Started GET "/users" for ::1 at 2019-10-19 11:07:42 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 11:07:42 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+  Parameters: {"session"=>{}}
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.7ms | Allocations: 6018)
+
+
+  [1m[36mUser Load (10.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 10.4ms | Allocations: 1803)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 11:07:43 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 11:07:43 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Parameters: {"session"=>{}}
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.8ms | Allocations: 6185)
+
+
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 11.0ms | Allocations: 6993)
+
+
+Started GET "/users" for ::1 at 2019-10-19 11:07:43 -0400
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Processing by UsersController#index as */*
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/logged_in" for ::1 at 2019-10-19 11:07:43 -0400
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 2.0ms | Allocations: 6090)
+
+
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 1.0ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/logged_in" for ::1 at 2019-10-19 11:07:43 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.5ms | Allocations: 1631)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 11:07:43 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 11:07:43 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Processing by SessionsController#logged_in as */*
+  ↳ app/controllers/users_controller.rb:11:in `index'
+  Parameters: {"session"=>{}}
+Completed 200 OK in 16ms (Views: 11.6ms | ActiveRecord: 3.9ms | Allocations: 6018)
+
+
+  [1m[36mUser Load (4.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 4.4ms | Allocations: 1818)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 11:07:56 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.9ms | Allocations: 5841)
+
+
+Started GET "/logged_in" for ::1 at 2019-10-19 11:07:56 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/logged_in" for ::1 at 2019-10-19 11:12:03 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.6ms | Allocations: 1631)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 11:12:07 -0400
+Processing by UsersController#index as */*
+Started GET "/logged_in" for ::1 at 2019-10-19 11:12:07 -0400
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 17ms (Views: 13.1ms | ActiveRecord: 3.1ms | Allocations: 6039)
+
+
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (8.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 8.7ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/logged_in" for ::1 at 2019-10-19 11:12:12 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 1.4ms | Allocations: 1631)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/logged_in" for ::1 at 2019-10-19 11:12:29 -0400
+Started GET "/leagues" for ::1 at 2019-10-19 11:12:29 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Processing by LeaguesController#index as */*
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.1ms | Allocations: 1925)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  [1m[36mLeague Load (96.8ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 103ms (Views: 5.9ms | ActiveRecord: 96.8ms | Allocations: 34473)
+
+
+Started PUT "/leagues/11" for ::1 at 2019-10-19 11:13:02 -0400
+Processing by LeaguesController#update as */*
+  Parameters: {"modal"=>true, "player"=>"Victor Kenny Oladipo", "position"=>"Center", "team"=>"Sacramento Kings", "coach"=>"Dwane Casey", "id"=>"11", "league"=>{"player"=>"Victor Kenny Oladipo", "position"=>"Center", "team"=>"Sacramento Kings", "coach"=>"Dwane Casey"}}
+  [1m[36mLeague Load (0.4ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues" WHERE "leagues"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/leagues_controller.rb:44:in `set_league'
+  [1m[35m (3.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/leagues_controller.rb:29:in `update'
+  [1m[36mLeague Update (7.4ms)[0m  [1m[33mUPDATE "leagues" SET "player" = $1, "updated_at" = $2 WHERE "leagues"."id" = $3[0m  [["player", "Victor Kenny Oladipo"], ["updated_at", "2019-10-19 15:13:02.424789"], ["id", 11]]
+  ↳ app/controllers/leagues_controller.rb:29:in `update'
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/leagues_controller.rb:29:in `update'
+Completed 200 OK in 68ms (Views: 0.5ms | ActiveRecord: 13.3ms | Allocations: 2910)
+
+
+Started DELETE "/leagues/10" for ::1 at 2019-10-19 11:13:13 -0400
+Processing by LeaguesController#destroy as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mLeague Load (0.4ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues" WHERE "leagues"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/leagues_controller.rb:44:in `set_league'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/leagues_controller.rb:38:in `destroy'
+  [1m[36mLeague Destroy (7.7ms)[0m  [1m[31mDELETE FROM "leagues" WHERE "leagues"."id" = $1[0m  [["id", 10]]
+  ↳ app/controllers/leagues_controller.rb:38:in `destroy'
+  [1m[35m (10.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/leagues_controller.rb:38:in `destroy'
+Completed 204 No Content in 28ms (ActiveRecord: 19.1ms | Allocations: 2202)
+
+
+Started GET "/logged_in" for ::1 at 2019-10-19 11:13:21 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (5.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 5.0ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 11:13:25 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 11:13:25 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.8ms | Allocations: 5706)
+
+
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.5ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 11:13:46 -0400
+Processing by UsersController#index as */*
+Started GET "/logged_in" for ::1 at 2019-10-19 11:13:46 -0400
+  [1m[36mUser Load (5.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 11ms (Views: 5.4ms | ActiveRecord: 5.0ms | Allocations: 6049)
+
+
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 4.8ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/logged_in" for ::1 at 2019-10-19 11:14:07 -0400
+Started GET "/leagues" for ::1 at 2019-10-19 11:14:07 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Processing by LeaguesController#index as */*
+  [1m[36mUser Load (6.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 6.6ms | Allocations: 2003)
+
+
+  [1m[36mLeague Load (9.9ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 229ms (Views: 218.2ms | ActiveRecord: 9.9ms | Allocations: 34293)
+
+
+Started GET "/users" for ::1 at 2019-10-19 11:14:25 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 11:14:25 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Processing by UsersController#index as */*
+  [1m[36mUser Load (4.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 4.7ms | Allocations: 2003)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  [1m[36mUser Load (130.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 144ms (Views: 13.0ms | ActiveRecord: 130.4ms | Allocations: 36984)
+
+
+Started GET "/leagues" for ::1 at 2019-10-19 11:16:22 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 11:16:22 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Processing by LeaguesController#index as */*
+  [1m[36mUser Load (17.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 17.7ms | Allocations: 2004)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  [1m[36mLeague Load (314.0ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 322ms (Views: 5.6ms | ActiveRecord: 314.0ms | Allocations: 29961)
+
+
+Started GET "/users" for ::1 at 2019-10-19 11:18:55 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 11:18:56 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (62.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+  [1m[36mUser Load (17.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 200 OK in 149ms (Views: 80.5ms | ActiveRecord: 62.4ms | Allocations: 6233)
+
+
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 89ms (ActiveRecord: 17.7ms | Allocations: 7447)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 11:18:56 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 11:18:56 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+  [1m[36mUser Load (16.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 200 OK in 20ms (Views: 15.4ms | ActiveRecord: 3.3ms | Allocations: 6194)
+
+
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 16.4ms | Allocations: 7446)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 11:18:57 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.3ms | Allocations: 5706)
+
+
+Started GET "/logged_in" for ::1 at 2019-10-19 11:18:57 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (5.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 5.0ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 11:18:57 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 73ms (Views: 72.1ms | ActiveRecord: 0.6ms | Allocations: 5706)
+
+
+Started GET "/logged_in" for ::1 at 2019-10-19 11:18:57 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.3ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/leagues" for ::1 at 2019-10-19 11:18:59 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 11:18:59 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Processing by LeaguesController#index as */*
+  [1m[36mUser Load (11.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 11.8ms | Allocations: 2003)
+
+
+  [1m[36mLeague Load (4.1ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 56ms (Views: 51.1ms | ActiveRecord: 4.1ms | Allocations: 34292)
+
+
+Started GET "/logged_in" for ::1 at 2019-10-19 11:19:17 -0400
+Started GET "/leagues" for ::1 at 2019-10-19 11:19:17 -0400
+Processing by LeaguesController#index as */*
+Processing by SessionsController#logged_in as */*
+  [1m[36mLeague Load (2.1ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  Parameters: {"session"=>{}}
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 7.0ms | ActiveRecord: 2.1ms | Allocations: 3336)
+
+
+  [1m[36mUser Load (17.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 17.9ms | Allocations: 4107)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/leagues" for ::1 at 2019-10-19 11:19:18 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 11:19:18 -0400
+Processing by SessionsController#logged_in as */*
+Processing by LeaguesController#index as */*
+  Parameters: {"session"=>{}}
+  [1m[36mLeague Load (1.2ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 1.2ms | Allocations: 3162)
+
+
+  [1m[36mUser Load (6.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 6.9ms | Allocations: 4723)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/leagues" for ::1 at 2019-10-19 11:19:20 -0400
+Processing by LeaguesController#index as */*
+  [1m[36mLeague Load (0.3ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.3ms | Allocations: 3270)
+
+
+Started GET "/logged_in" for ::1 at 2019-10-19 11:19:20 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 3.2ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/logged_in" for ::1 at 2019-10-19 11:27:31 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (21.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 101ms (ActiveRecord: 23.4ms | Allocations: 1719)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 11:27:33 -0400
+Processing by UsersController#index as */*
+Started GET "/logged_in" for ::1 at 2019-10-19 11:27:33 -0400
+  [1m[36mUser Load (13.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 32ms (Views: 18.2ms | ActiveRecord: 13.4ms | Allocations: 6254)
+
+
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 22.9ms | Allocations: 1732)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 11:29:59 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 37ms (Views: 32.3ms | ActiveRecord: 1.5ms | Allocations: 5706)
+
+
+Started GET "/logged_in" for ::1 at 2019-10-19 11:30:00 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (14.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 14.8ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 11:30:01 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 11:30:01 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.6ms | Allocations: 1760)
+
+
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 19ms (Views: 15.7ms | ActiveRecord: 2.6ms | Allocations: 7819)
+
+
+Started GET "/users" for ::1 at 2019-10-19 11:30:01 -0400
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Processing by UsersController#index as */*
+Started GET "/logged_in" for ::1 at 2019-10-19 11:30:02 -0400
+  [1m[36mUser Load (328.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 338ms (Views: 9.7ms | ActiveRecord: 328.5ms | Allocations: 27372)
+
+
+Started GET "/users" for ::1 at 2019-10-19 11:30:02 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Processing by UsersController#index as */*
+  [1m[36mUser Load (37.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 37.9ms | Allocations: 2004)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  [1m[36mUser Load (86.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 105ms (Views: 18.3ms | ActiveRecord: 86.2ms | Allocations: 37151)
+
+
+Started GET "/logged_in" for ::1 at 2019-10-19 11:30:02 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.8ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 11:30:02 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 11:30:02 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (12.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 12.7ms | Allocations: 1631)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Processing by UsersController#index as */*
+  [1m[36mUser Load (26.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 36ms (Views: 9.1ms | ActiveRecord: 26.4ms | Allocations: 5706)
+
+
+Started GET "/logged_in" for ::1 at 2019-10-19 11:30:45 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 1.0ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 11:30:52 -0400
+Processing by UsersController#index as */*
+Started GET "/logged_in" for ::1 at 2019-10-19 11:30:52 -0400
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 9ms (Views: 6.5ms | ActiveRecord: 2.0ms | Allocations: 6049)
+
+
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (23.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 23.7ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 12:14:01 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 12:14:01 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 35ms (Views: 27.1ms | ActiveRecord: 4.2ms | Allocations: 5989)
+
+
+  [1m[36mUser Load (18.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 19.3ms | Allocations: 7592)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 12:21:37 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 12:21:37 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 118ms (ActiveRecord: 65.3ms | Allocations: 1742)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Processing by UsersController#index as */*
+Started GET "/logged_in" for ::1 at 2019-10-19 12:21:38 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.5ms | Allocations: 1631)
+
+
+  [1m[36mUser Load (14.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 98ms (Views: 81.7ms | ActiveRecord: 14.8ms | Allocations: 37981)
+
+
+Started GET "/users" for ::1 at 2019-10-19 12:21:38 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 12:21:38 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (30.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 42ms (Views: 11.6ms | ActiveRecord: 30.4ms | Allocations: 5706)
+
+
+Started GET "/users" for ::1 at 2019-10-19 12:21:38 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.8ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Processing by UsersController#index as */*
+Started GET "/logged_in" for ::1 at 2019-10-19 12:21:38 -0400
+  [1m[36mUser Load (51.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 171ms (Views: 118.9ms | ActiveRecord: 51.4ms | Allocations: 6035)
+
+
+Started GET "/users" for ::1 at 2019-10-19 12:21:39 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Processing by UsersController#index as */*
+  [1m[36mUser Load (179.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 189ms (Views: 9.3ms | ActiveRecord: 179.5ms | Allocations: 5719)
+
+
+Started GET "/users" for ::1 at 2019-10-19 12:21:39 -0400
+  [1m[36mUser Load (754.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 765ms (ActiveRecord: 754.7ms | Allocations: 8159)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Processing by UsersController#index as */*
+Started GET "/logged_in" for ::1 at 2019-10-19 12:21:40 -0400
+  [1m[36mUser Load (296.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 310ms (Views: 12.8ms | ActiveRecord: 296.7ms | Allocations: 6950)
+
+
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (17.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 17.0ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/logged_in" for ::1 at 2019-10-19 12:21:44 -0400
+Started GET "/leagues" for ::1 at 2019-10-19 12:21:44 -0400
+Processing by LeaguesController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.2ms | Allocations: 1732)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  [1m[36mLeague Load (33.0ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 42ms (Views: 7.4ms | ActiveRecord: 33.0ms | Allocations: 34523)
+
+
+Started GET "/leagues" for ::1 at 2019-10-19 12:24:09 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 12:24:09 -0400
+Processing by LeaguesController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mLeague Load (9.4ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 59ms (Views: 47.3ms | ActiveRecord: 9.4ms | Allocations: 3395)
+
+
+  [1m[36mUser Load (47.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 47.7ms | Allocations: 4724)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/leagues" for ::1 at 2019-10-19 12:24:50 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 12:24:50 -0400
+Processing by LeaguesController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mLeague Load (2.7ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 5.2ms | ActiveRecord: 2.7ms | Allocations: 3464)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.7ms | Allocations: 4750)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 12:25:14 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (17.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 25ms (Views: 6.9ms | ActiveRecord: 17.6ms | Allocations: 5706)
+
+
+Started GET "/logged_in" for ::1 at 2019-10-19 12:25:15 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (27.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 27.9ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 12:25:15 -0400
+Processing by UsersController#index as */*
+Started GET "/logged_in" for ::1 at 2019-10-19 12:25:15 -0400
+  [1m[36mUser Load (53.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 192ms (Views: 64.4ms | ActiveRecord: 53.4ms | Allocations: 6049)
+
+
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 2.9ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 12:25:15 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 12:25:15 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 1.0ms | Allocations: 6001)
+
+
+  [1m[36mUser Load (19.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 19.1ms | Allocations: 1803)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 12:25:15 -0400
+Processing by UsersController#index as */*
+Started GET "/logged_in" for ::1 at 2019-10-19 12:25:15 -0400
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Processing by SessionsController#logged_in as */*
+Completed 200 OK in 18ms (Views: 15.1ms | ActiveRecord: 1.7ms | Allocations: 6334)
+
+
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (11.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 11.8ms | Allocations: 1668)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/leagues" for ::1 at 2019-10-19 12:25:16 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 12:25:16 -0400
+Processing by LeaguesController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 2.1ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  [1m[36mLeague Load (197.1ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 202ms (Views: 4.3ms | ActiveRecord: 197.1ms | Allocations: 34819)
+
+
+Started GET "/users" for ::1 at 2019-10-19 12:26:00 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 10ms (Views: 6.8ms | ActiveRecord: 3.3ms | Allocations: 5707)
+
+
+Started GET "/logged_in" for ::1 at 2019-10-19 12:26:00 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (10.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 10.5ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/leagues" for ::1 at 2019-10-19 12:26:01 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 12:26:01 -0400
+Processing by LeaguesController#index as */*
+  [1m[36mLeague Load (0.4ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.4ms | Allocations: 2992)
+
+
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.4ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 12:26:01 -0400
+Processing by UsersController#index as */*
+Started GET "/logged_in" for ::1 at 2019-10-19 12:26:01 -0400
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 9ms (Views: 6.4ms | ActiveRecord: 2.0ms | Allocations: 6040)
+
+
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (16.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 16.2ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 12:26:01 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 12:26:01 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (4.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 11ms (Views: 6.1ms | ActiveRecord: 4.6ms | Allocations: 6197)
+
+
+  [1m[36mUser Load (6.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 6.9ms | Allocations: 7446)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 12:26:02 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 12:26:02 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 9ms (Views: 6.1ms | ActiveRecord: 1.9ms | Allocations: 5706)
+
+
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (27.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 27.9ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/logged_in" for ::1 at 2019-10-19 12:26:29 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Started GET "/leagues" for ::1 at 2019-10-19 12:26:29 -0400
+Processing by LeaguesController#index as */*
+  [1m[36mUser Load (10.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 10.5ms | Allocations: 2344)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  [1m[36mLeague Load (66.7ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 72ms (Views: 5.1ms | ActiveRecord: 66.7ms | Allocations: 34327)
+
+
+Started GET "/users" for ::1 at 2019-10-19 12:26:57 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 12:26:57 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (15.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 15.0ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  [1m[36mUser Load (138.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 147ms (Views: 7.8ms | ActiveRecord: 138.6ms | Allocations: 19553)
+
+
+Started GET "/users" for ::1 at 2019-10-19 12:26:57 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 12:26:57 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 9ms (Views: 6.0ms | ActiveRecord: 3.1ms | Allocations: 5706)
+
+
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 2.0ms | Allocations: 1720)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 12:26:57 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 12:26:57 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 2.0ms | Allocations: 1643)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  [1m[36mUser Load (33.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 40ms (Views: 6.9ms | ActiveRecord: 33.1ms | Allocations: 37553)
+
+
+Started GET "/users" for ::1 at 2019-10-19 12:26:57 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 12:26:57 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Processing by UsersController#index as */*
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 1.9ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  [1m[36mUser Load (32.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 40ms (Views: 7.2ms | ActiveRecord: 32.1ms | Allocations: 37195)
+
+
+Started GET "/leagues" for ::1 at 2019-10-19 12:26:58 -0400
+Processing by LeaguesController#index as */*
+  [1m[36mLeague Load (0.8ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.8ms | Allocations: 2984)
+
+
+Started GET "/logged_in" for ::1 at 2019-10-19 12:26:58 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.9ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 12:28:42 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 12:28:42 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 14ms (Views: 10.7ms | ActiveRecord: 2.6ms | Allocations: 6197)
+
+
+  [1m[36mUser Load (11.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 11.5ms | Allocations: 7446)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 12:28:42 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (6.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 15ms (Views: 8.5ms | ActiveRecord: 6.7ms | Allocations: 5706)
+
+
+Started GET "/logged_in" for ::1 at 2019-10-19 12:28:42 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.5ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 12:28:42 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 12:28:42 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Processing by UsersController#index as */*
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 1.2ms | Allocations: 2003)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  [1m[36mUser Load (30.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 38ms (Views: 7.5ms | ActiveRecord: 30.3ms | Allocations: 37019)
+
+
+Started GET "/leagues" for ::1 at 2019-10-19 12:28:42 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 12:28:42 -0400
+Processing by LeaguesController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (7.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 7.3ms | Allocations: 1635)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  [1m[36mLeague Load (198.9ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 203ms (Views: 3.3ms | ActiveRecord: 198.9ms | Allocations: 34822)
+
+
+Started GET "/users" for ::1 at 2019-10-19 12:28:43 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 12:28:43 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 1632)
+
+
+  [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 44ms (Views: 39.4ms | ActiveRecord: 4.2ms | Allocations: 37543)
+
+
+Started GET "/leagues" for ::1 at 2019-10-19 12:32:31 -0400
+Processing by LeaguesController#index as */*
+  [1m[36mLeague Load (0.8ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 50ms (Views: 22.9ms | ActiveRecord: 0.8ms | Allocations: 2983)
+
+
+Started GET "/logged_in" for ::1 at 2019-10-19 12:32:32 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (4.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 4.7ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 12:33:18 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 12:33:18 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (102.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 111ms (ActiveRecord: 102.0ms | Allocations: 1631)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Processing by UsersController#index as */*
+  [1m[36mUser Load (11.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 27ms (Views: 15.3ms | ActiveRecord: 11.0ms | Allocations: 5706)
+
+
+Started GET "/logged_in" for ::1 at 2019-10-19 12:39:14 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (28.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 28.1ms | Allocations: 1635)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 12:39:17 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 12:39:17 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (10.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 23ms (Views: 12.4ms | ActiveRecord: 10.1ms | Allocations: 5706)
+
+
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 1.9ms | Allocations: 1720)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 14:21:08 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 14:21:08 -0400
+Processing by SessionsController#logged_in as */*
+Processing by UsersController#index as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (10.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `index'
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 200 OK in 39ms (Views: 22.8ms | ActiveRecord: 10.7ms | Allocations: 6493)
+
+
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 1.6ms | Allocations: 7421)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/logged_in" for ::1 at 2019-10-19 14:21:24 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Started GET "/leagues" for ::1 at 2019-10-19 14:21:24 -0400
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 1.7ms | Allocations: 1964)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Processing by LeaguesController#index as */*
+  [1m[36mLeague Load (17.4ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 23ms (Views: 4.8ms | ActiveRecord: 17.4ms | Allocations: 29481)
+
+
+Started GET "/users" for ::1 at 2019-10-19 14:21:37 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 14:21:37 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (13.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+  [1m[36mUser Load (6.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 200 OK in 42ms (Views: 25.3ms | ActiveRecord: 13.4ms | Allocations: 6153)
+
+
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 6.6ms | Allocations: 7447)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 14:21:38 -0400
+Processing by UsersController#index as */*
+Started GET "/logged_in" for ::1 at 2019-10-19 14:21:38 -0400
+  [1m[36mUser Load (17.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 31ms (Views: 13.0ms | ActiveRecord: 17.6ms | Allocations: 6035)
+
+
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 1.2ms | Allocations: 1659)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 14:21:38 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 14:21:38 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (28.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+  [1m[36mUser Load (8.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 200 OK in 39ms (Views: 10.6ms | ActiveRecord: 28.1ms | Allocations: 6228)
+
+
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 8.8ms | Allocations: 7446)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/logged_in" for ::1 at 2019-10-19 14:21:38 -0400
+Started GET "/users" for ::1 at 2019-10-19 14:21:38 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.4ms | Allocations: 1738)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  [1m[36mUser Load (6.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 82ms (Views: 74.9ms | ActiveRecord: 6.8ms | Allocations: 37050)
+
+
+Started GET "/leagues" for ::1 at 2019-10-19 14:21:38 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 14:21:38 -0400
+Processing by LeaguesController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 4.0ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  [1m[36mLeague Load (111.9ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 116ms (Views: 3.8ms | ActiveRecord: 111.9ms | Allocations: 34836)
+
+
+Started GET "/users" for ::1 at 2019-10-19 14:22:21 -0400
+Processing by UsersController#index as */*
+Started GET "/logged_in" for ::1 at 2019-10-19 14:22:21 -0400
+  [1m[36mUser Load (4.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 10ms (Views: 5.4ms | ActiveRecord: 4.1ms | Allocations: 5898)
+
+
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.7ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/leagues" for ::1 at 2019-10-19 14:31:50 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 14:31:50 -0400
+Processing by LeaguesController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mLeague Load (6.9ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 35ms (Views: 24.6ms | ActiveRecord: 6.9ms | Allocations: 3301)
+
+
+  [1m[36mUser Load (5.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 69ms (ActiveRecord: 5.5ms | Allocations: 4833)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 14:38:40 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 14:38:40 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Parameters: {"session"=>{}}
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 30ms (Views: 25.4ms | ActiveRecord: 1.9ms | Allocations: 6249)
+
+
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 16.8ms | Allocations: 6976)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 14:39:31 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 14:39:31 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (37.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 82ms (Views: 41.5ms | ActiveRecord: 37.6ms | Allocations: 5905)
+
+
+  [1m[36mUser Load (61.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 100ms (ActiveRecord: 61.8ms | Allocations: 7413)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 14:39:32 -0400
+Processing by UsersController#index as */*
+Started GET "/logged_in" for ::1 at 2019-10-19 14:39:32 -0400
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.9ms | Allocations: 5866)
+
+
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Started GET "/users" for ::1 at 2019-10-19 14:39:32 -0400
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 2.1ms | Allocations: 1995)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Processing by UsersController#index as */*
+Started GET "/logged_in" for ::1 at 2019-10-19 14:39:32 -0400
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 0.8ms | Allocations: 6006)
+
+
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (7.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 7.8ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 14:39:32 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 14:39:32 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 1.0ms | Allocations: 6114)
+
+
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 8.5ms | Allocations: 7485)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/logged_in" for ::1 at 2019-10-19 14:39:32 -0400
+Started GET "/leagues" for ::1 at 2019-10-19 14:39:32 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 3.6ms | Allocations: 1631)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Processing by LeaguesController#index as */*
+  [1m[36mLeague Load (66.9ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 73ms (Views: 6.3ms | ActiveRecord: 66.9ms | Allocations: 3019)
+
+
+Started GET "/users" for ::1 at 2019-10-19 14:39:46 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 14:39:46 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (5.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 23ms (Views: 17.2ms | ActiveRecord: 5.8ms | Allocations: 6205)
+
+
+  [1m[36mUser Load (30.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 30.7ms | Allocations: 6589)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 15:11:49 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 15:11:49 -0400
+Started GET "/leagues" for ::1 at 2019-10-19 15:11:49 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Processing by LeaguesController#index as */*
+Processing by UsersController#index as */*
+  [1m[36mUser Load (57.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 92ms (Views: 33.7ms | ActiveRecord: 57.8ms | Allocations: 5783)
+
+
+Started GET "/users" for ::1 at 2019-10-19 15:11:50 -0400
+  [1m[36mLeague Load (211.5ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  [1m[36mUser Load (186.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 284ms (ActiveRecord: 206.6ms | Allocations: 9648)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Processing by UsersController#index as */*
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 250ms (Views: 25.6ms | ActiveRecord: 211.5ms | Allocations: 12053)
+
+
+Started GET "/logged_in" for ::1 at 2019-10-19 15:11:50 -0400
+  [1m[36mUser Load (116.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 128ms (Views: 11.5ms | ActiveRecord: 116.7ms | Allocations: 37919)
+
+
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (21.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 21.2ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/logged_in" for ::1 at 2019-10-19 15:11:50 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (16.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 16.5ms | Allocations: 1631)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 15:11:51 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 18ms (Views: 12.0ms | ActiveRecord: 1.9ms | Allocations: 5706)
+
+
+Started GET "/logged_in" for ::1 at 2019-10-19 15:11:51 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.3ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 15:11:51 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 15:11:51 -0400
+Processing by SessionsController#logged_in as */*
+Processing by UsersController#index as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (17.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 28ms (Views: 10.1ms | ActiveRecord: 17.8ms | Allocations: 5896)
+
+
+  [1m[36mUser Load (13.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 29.5ms | Allocations: 7473)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 15:12:00 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 15:12:00 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.5ms | Allocations: 1631)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  [1m[36mUser Load (43.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 56ms (Views: 12.0ms | ActiveRecord: 43.5ms | Allocations: 37206)
+
+
+Started GET "/leagues" for ::1 at 2019-10-19 15:12:20 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 15:12:20 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Processing by LeaguesController#index as */*
+Started GET "/users" for ::1 at 2019-10-19 15:12:20 -0400
+  [1m[36mUser Load (459.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 487ms (ActiveRecord: 459.2ms | Allocations: 2267)
+
+
+Processing by UsersController#index as */*
+  [1m[36mLeague Load (474.1ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 603ms (Views: 127.7ms | ActiveRecord: 474.1ms | Allocations: 22736)
+
+
+  [1m[36mUser Load (204.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 219ms (Views: 13.3ms | ActiveRecord: 204.1ms | Allocations: 38158)
+
+
+Started GET "/logged_in" for ::1 at 2019-10-19 15:12:21 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (4.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 10.7ms | Allocations: 1659)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 15:12:21 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 15:12:21 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Processing by UsersController#index as */*
+  [1m[36mUser Load (15.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 15.5ms | Allocations: 1738)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  [1m[36mUser Load (127.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 137ms (Views: 9.1ms | ActiveRecord: 127.5ms | Allocations: 37188)
+
+
+Started GET "/users" for ::1 at 2019-10-19 15:12:22 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 76ms (Views: 73.2ms | ActiveRecord: 2.6ms | Allocations: 5710)
+
+
+Started GET "/logged_in" for ::1 at 2019-10-19 15:12:22 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (5.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 5.1ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 15:12:23 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 12ms (Views: 8.9ms | ActiveRecord: 2.8ms | Allocations: 5706)
+
+
+Started GET "/logged_in" for ::1 at 2019-10-19 15:12:23 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 3.8ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/leagues" for ::1 at 2019-10-19 15:12:56 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 15:12:56 -0400
+Processing by LeaguesController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mLeague Load (5.4ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+  [1m[36mUser Load (7.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 200 OK in 27ms (Views: 17.9ms | ActiveRecord: 5.4ms | Allocations: 3206)
+
+
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 7.4ms | Allocations: 4687)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 15:12:56 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 15:12:56 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.6ms | Allocations: 2248)
+
+
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 1.0ms | Allocations: 7393)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 15:12:56 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 1.9ms | Allocations: 5706)
+
+
+Started GET "/logged_in" for ::1 at 2019-10-19 15:12:56 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 2.3ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 15:12:57 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 15:12:57 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 12ms (Views: 8.3ms | ActiveRecord: 3.8ms | Allocations: 5902)
+
+
+  [1m[36mUser Load (25.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 25.6ms | Allocations: 7446)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 15:12:57 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 15:12:57 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 12ms (Views: 8.6ms | ActiveRecord: 3.0ms | Allocations: 6196)
+
+
+  [1m[36mUser Load (31.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 31.0ms | Allocations: 7446)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 16:31:56 -0400
+Started GET "/logged_in" for ::1 at 2019-10-19 16:31:56 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (22.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  [1m[36mUser Load (49.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 500 Internal Server Error in 105ms (ActiveRecord: 22.9ms | Allocations: 2336)
+
+
+Completed 200 OK in 184ms (Views: 132.1ms | ActiveRecord: 49.3ms | Allocations: 7542)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-19 16:32:25 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Started GET "/logged_in" for ::1 at 2019-10-19 16:32:25 -0400
+Completed 200 OK in 44ms (Views: 43.2ms | ActiveRecord: 0.8ms | Allocations: 6033)
+
+
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 2.1ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-20 12:27:06 -0400
+Started GET "/logged_in" for ::1 at 2019-10-20 12:27:06 -0400
+Processing by SessionsController#logged_in as */*
+Processing by UsersController#index as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (12.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `index'
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 200 OK in 63ms (Views: 41.5ms | ActiveRecord: 12.9ms | Allocations: 6493)
+
+
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 1.3ms | Allocations: 7421)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/logged_in" for ::1 at 2019-10-20 12:27:19 -0400
+Started GET "/users" for ::1 at 2019-10-20 12:27:19 -0400
+Processing by UsersController#index as */*
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 4.2ms | Allocations: 1631)
+
+
+  [1m[36mUser Load (15.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 85ms (Views: 69.0ms | ActiveRecord: 15.9ms | Allocations: 37208)
+
+
+Started GET "/leagues" for ::1 at 2019-10-20 12:27:28 -0400
+Started GET "/logged_in" for ::1 at 2019-10-20 12:27:28 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Processing by LeaguesController#index as */*
+  [1m[36mUser Load (6.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 6.9ms | Allocations: 1994)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  [1m[36mLeague Load (58.8ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 70ms (Views: 10.9ms | ActiveRecord: 58.8ms | Allocations: 34481)
+
+
+Started PUT "/leagues/12" for ::1 at 2019-10-20 12:27:39 -0400
+Processing by LeaguesController#update as */*
+  Parameters: {"modal"=>true, "player"=>"Olu Amorin", "position"=>"Shooting Guard", "team"=>"Oklahoma City Thunder", "coach"=>"Dwane Casey", "id"=>"12", "league"=>{"player"=>"Olu Amorin", "position"=>"Shooting Guard", "team"=>"Oklahoma City Thunder", "coach"=>"Dwane Casey"}}
+  [1m[36mLeague Load (0.6ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues" WHERE "leagues"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/leagues_controller.rb:44:in `set_league'
+  [1m[35m (4.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/leagues_controller.rb:29:in `update'
+  [1m[36mLeague Update (17.6ms)[0m  [1m[33mUPDATE "leagues" SET "player" = $1, "updated_at" = $2 WHERE "leagues"."id" = $3[0m  [["player", "Olu Amorin"], ["updated_at", "2019-10-20 16:27:39.981793"], ["id", 12]]
+  ↳ app/controllers/leagues_controller.rb:29:in `update'
+  [1m[35m (7.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/leagues_controller.rb:29:in `update'
+Completed 200 OK in 51ms (Views: 0.4ms | ActiveRecord: 30.7ms | Allocations: 2933)
+
+
+Started DELETE "/leagues/12" for ::1 at 2019-10-20 12:27:49 -0400
+Processing by LeaguesController#destroy as */*
+  Parameters: {"id"=>"12"}
+  [1m[36mLeague Load (25.4ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues" WHERE "leagues"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/leagues_controller.rb:44:in `set_league'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/leagues_controller.rb:38:in `destroy'
+  [1m[36mLeague Destroy (17.5ms)[0m  [1m[31mDELETE FROM "leagues" WHERE "leagues"."id" = $1[0m  [["id", 12]]
+  ↳ app/controllers/leagues_controller.rb:38:in `destroy'
+  [1m[35m (14.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/leagues_controller.rb:38:in `destroy'
+Completed 204 No Content in 68ms (ActiveRecord: 57.8ms | Allocations: 2202)
+
+
+Started GET "/users" for ::1 at 2019-10-21 18:54:44 -0400
+Started GET "/logged_in" for ::1 at 2019-10-21 18:54:44 -0400
+Processing by SessionsController#logged_in as */*
+Processing by UsersController#index as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+  [1m[36mUser Load (18.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 2.5ms | Allocations: 1738)
+
+
+  ↳ app/controllers/users_controller.rb:11:in `index'
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 200 OK in 65ms (Views: 40.5ms | ActiveRecord: 18.8ms | Allocations: 8011)
+
+
+Started GET "/logged_in" for ::1 at 2019-10-21 18:54:50 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (6.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 6.1ms | Allocations: 1631)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/users" for ::1 at 2019-10-21 18:54:52 -0400
+Started GET "/logged_in" for ::1 at 2019-10-21 18:54:52 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Processing by SessionsController#logged_in as */*
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.5ms | Allocations: 6007)
+
+
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.7ms | Allocations: 1659)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/logged_in" for ::1 at 2019-10-21 18:54:55 -0400
+Started GET "/leagues" for ::1 at 2019-10-21 18:54:55 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Processing by LeaguesController#index as */*
+  [1m[36mUser Load (35.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 35.1ms | Allocations: 1867)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  [1m[36mLeague Load (129.3ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 136ms (Views: 5.9ms | ActiveRecord: 129.3ms | Allocations: 34339)
+
+
+Started GET "/users" for ::1 at 2019-10-21 18:55:21 -0400
+Started GET "/logged_in" for ::1 at 2019-10-21 18:55:21 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (7.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Processing by SessionsController#logged_in as */*
+Completed 200 OK in 22ms (Views: 13.5ms | ActiveRecord: 7.3ms | Allocations: 6006)
+
+
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.5ms | Allocations: 1632)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/logged_in" for ::1 at 2019-10-21 18:56:00 -0400
+Started GET "/leagues" for ::1 at 2019-10-21 18:56:00 -0400
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Processing by LeaguesController#index as */*
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:29:in `logged_in'
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 1.1ms | Allocations: 1742)
+
+
+  
+NoMethodError (undefined method `join' for {}:Hash):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+  [1m[36mLeague Load (18.0ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/controllers/leagues_controller.rb:8:in `index'
+Completed 200 OK in 78ms (Views: 58.7ms | ActiveRecord: 18.0ms | Allocations: 34288)
+
+

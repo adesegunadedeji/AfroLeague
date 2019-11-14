@@ -9,6 +9,7 @@ import {BrowserRouter,Route,Switch} from 'react-router-dom'
 import Player from './components/Player/Player';
 import NavbarReact from './components/Navbar/Navbar';
 import Contact from './components/Contact/Contact';
+import About from './components/Contact/Contact';
 
 class App extends Component {
       constructor(){
@@ -142,6 +143,7 @@ handleSuccessfulAuth(data) {
        )}/>
        <Route exact path={"/players"} component ={Player}/>
        <Route exact path={"/contact"} component ={Contact}/>
+       <Route exact path={"/about"} component ={About}/>
        < Route path ='/newPlayer' render={(props)=> <NewPlayer {...props} 
        createPlayer={this.createPlayer}/>}/>
       <Route exact path={"/players"} component ={Player}/>
