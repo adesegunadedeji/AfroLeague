@@ -1,0 +1,21 @@
+{
+  "name": "afro_league_api",
+  "version": "1.0.0",
+  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd client && yarn install && yarn build && cd ..",
+    "deploy": "cp -a client/build/. public/",
+    "postinstall": "yarn build && yarn deploy && echo 'Client built!'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adesegunadedeji/AfroLeague.git"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC"
+}

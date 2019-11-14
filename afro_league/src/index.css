@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+ a.mr-auto.navbar-brand{
+  font-family: 'Mansalva', cursive;
+  color:  #ED164E;
+ }
+ footer.footer{
+   background-position: fixed;
+   background-color:grey;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Mansalva', cursive;
+ }
+
+input.LoginForm.form-control:focus{
+  margin: 3px;
+  font-family: 'Mansalva', cursive;
+}
+input.LoginForm.form-control{
+  margin: 3px;
+  font-family: 'Mansalva', cursive;
+  cursor: pointer;
+}
+textarea.LoginFormArea.form-control {
+margin: 3px;
+font-family: 'Mansalva', cursive;
+cursor: pointer;
+width: 50%
+}
+p{
+  font-family: 'Play', sans-serif
+}
+div.modal-header{
+    font-family: 'Mansalva', cursive;
+    color:  #ED164E;
+}
+a.nav-link{
+  font-family: 'Mansalva', cursive;
+  color:  #ED164E;
+ }
+ h1,h6,.labelEdit{
+  font-family: 'Mansalva', cursive;
+ }
+ button.btn{
+  font-family: 'Mansalva', cursive;
+  border: 2px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  cursor: pointer;
+ }
+ .button:hover {opacity: 1}
+ .Timer{
+  font-family: 'PT Sans', sans-serif;
+  text-align: right;
+  font-size: 16px;
+ }
+ .jumbotron{
+   margin-top: 50px;
+   margin-bottom: 50px;
+  background-image: url('https://images.unsplash.com/photo-1493078640264-28e9ec0ae9ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+  background-size: cover;
+  color: white;
+
+ }
+ .jumbotronLink.nav-link{
+
+   font-size: 22px;
+   text-decoration-color:  white;
+ }
+label.col-sm-2.col-form-label,p{
+  font-family: 'Mansalva', cursive;
+}
+.NewPlayer{
+  text-align: justify
+}
