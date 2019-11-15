@@ -79,8 +79,6 @@ class App extends Component {
     } 
   }
    
-
-
     createPlayer =async(formData) =>{
       try{
           console.log("CREATING NEW PLAYER")
